@@ -1,0 +1,113 @@
+"use client"
+
+import { useState } from "react"
+import Link from "next/link"
+import { Menu, X } from "lucide-react"
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  return (
+    <header className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="container mx-auto px-4">
+        <div className="flex items-center justify-between h-16">
+          <Link href="/" className="font-bold text-xl text-green-800">
+            Lobos Patagonia Travel
+          </Link>
+
+          <nav className="hidden md:flex items-center space-x-6">
+            <Link href="/" className="text-stone-700 hover:text-green-700 transition-colors">
+              Inicio
+            </Link>
+            <Link href="/nosotros" className="text-stone-700 hover:text-green-700 transition-colors">
+              Nosotros
+            </Link>
+            <Link href="/servicios" className="text-stone-700 hover:text-green-700 transition-colors">
+              Servicios
+            </Link>
+            <Link href="/vehiculos" className="text-stone-700 hover:text-green-700 transition-colors">
+              Vehículos
+            </Link>
+            <Link href="/recorridos-tarifas" className="text-stone-700 hover:text-green-700 transition-colors">
+              Recorridos y Tarifas
+            </Link>
+            <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
+              Galería
+            </Link>
+            <Link
+              href="/contacto"
+              className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors"
+            >
+              Contacto
+            </Link>
+          </nav>
+
+          <button
+            className="md:hidden text-stone-700"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="md:hidden bg-white border-t">
+          <div className="container mx-auto px-4 py-4 space-y-3">
+            <Link
+              href="/"
+              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Inicio
+            </Link>
+            <Link
+              href="/nosotros"
+              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Nosotros
+            </Link>
+            <Link
+              href="/servicios"
+              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Servicios
+            </Link>
+            <Link
+              href="/vehiculos"
+              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Vehículos
+            </Link>
+            <Link
+              href="/recorridos-tarifas"
+              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Recorridos y Tarifas
+            </Link>
+            <Link
+              href="/galeria"
+              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Galería
+            </Link>
+            <Link
+              href="/contacto"
+              className="block bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors w-full text-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Contacto
+            </Link>
+          </div>
+        </div>
+      )}
+    </header>
+  )
+}

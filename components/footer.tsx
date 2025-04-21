@@ -1,0 +1,126 @@
+import Link from "next/link"
+import { Facebook, Instagram, Mail, Phone } from "lucide-react"
+
+export default function Footer() {
+  return (
+    <footer className="bg-stone-800 text-stone-200 pt-12 pb-6">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div>
+            <h3 className="text-xl font-bold mb-4 text-white">Lobos Patagonia Travel</h3>
+            <p className="mb-4">
+              Empresa familiar de transporte de pasajeros que proporciona transporte seguro y cómodo a través de los
+              hermosos paisajes del Sur de Chile.
+            </p>
+            <div className="flex space-x-4">
+              <a href="#" className="text-stone-300 hover:text-white transition-colors" aria-label="Facebook">
+                <Facebook size={20} />
+              </a>
+              <a href="#" className="text-stone-300 hover:text-white transition-colors" aria-label="Instagram">
+                <Instagram size={20} />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">Enlaces Rápidos</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/" className="hover:text-white transition-colors">
+                  Inicio
+                </Link>
+              </li>
+              <li>
+                <Link href="/nosotros" className="hover:text-white transition-colors">
+                  Nosotros
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="hover:text-white transition-colors">
+                  Servicios
+                </Link>
+              </li>
+              <li>
+                <Link href="/vehiculos" className="hover:text-white transition-colors">
+                  Vehículos
+                </Link>
+              </li>
+              <li>
+                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
+                  Recorridos y Tarifas
+                </Link>
+              </li>
+              <li>
+                <Link href="/galeria" className="hover:text-white transition-colors">
+                  Galería
+                </Link>
+              </li>
+              <li>
+                <Link href="/contacto" className="hover:text-white transition-colors">
+                  Contacto
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">Nuestros Servicios</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/servicios" className="hover:text-white transition-colors">
+                  Traslados al Aeropuerto
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="hover:text-white transition-colors">
+                  Viajes Interregionales
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="hover:text-white transition-colors">
+                  Tours Personalizados
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="hover:text-white transition-colors">
+                  Transporte para Grupos
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="hover:text-white transition-colors">
+                  Servicios Corporativos
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold mb-4 text-white">Contáctanos</h3>
+            <ul className="space-y-3">
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="mt-1 shrink-0" />
+                <div>
+                  <p>Enrique: +56 9 9095 7491</p>
+                  <p>Óscar: +56 9 9313 5819</p>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={18} className="shrink-0" />
+                <a href="mailto:info@lobospatagonia.com" className="hover:text-white transition-colors">
+                  info@lobospatagonia.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-stone-700 pt-6 text-center text-sm">
+          <p>&copy; {new Date().getFullYear()} Lobos Patagonia Travel. Todos los derechos reservados.</p>
+          <p className="mt-2 text-stone-400">
+            Diseñado con ❤️ para el medio ambiente y la hermosa región de la Patagonia
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
