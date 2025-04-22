@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Nuestros Servicios</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        Lobos Patagonia Travel ofrece una variedad de servicios de transporte diseñados para satisfacer las necesidades
+        Lobos Transfer Los Lagos ofrece una variedad de servicios de transporte diseñados para satisfacer las necesidades
         de los viajeros que exploran los hermosos paisajes del Sur de Chile. Todos nuestros servicios priorizan la
         seguridad, la comodidad y la responsabilidad ambiental.
       </p>
@@ -67,7 +67,7 @@ export default function ServicesPage() {
             <h2 className="text-2xl font-semibold mb-4 text-green-700">Viajes Interregionales</h2>
             <p className="mb-4">
               Explore las diversas regiones del Sur de Chile con nuestro cómodo servicio de transporte interregional.
-              Conectamos las principales ciudades, pueblos y atracciones naturales de toda la Patagonia.
+              Conectamos las principales ciudades, pueblos y atracciones naturales de toda la Region de Los Lagos.
             </p>
             <ul className="space-y-2 mb-4">
               <li className="flex items-start gap-2">

@@ -6,7 +6,7 @@ export default function VehiclesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Our Vehicles</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        At Lobos Patagonia Travel, we take pride in our well-maintained fleet of comfortable passenger vans. Each
+        At Lobos Transfer Los Lagos, we take pride in our well-maintained fleet of comfortable passenger vans. Each
         vehicle is regularly serviced to ensure safety, reliability, and a pleasant journey through the beautiful
         landscapes of Southern Chile.
       </p>
@@ -242,7 +242,7 @@ export default function VehiclesPage() {
         <p className="max-w-3xl mx-auto">
           All our vehicles undergo regular professional maintenance and safety inspections to ensure reliability and
           passenger comfort. We prioritize eco-friendly practices in our maintenance routines to minimize our
-          environmental impact while traveling through the pristine landscapes of Patagonia.
+          environmental impact while traveling through the pristine landscapes of Region de Los Lagos.
         </p>
       </div>
     </div>

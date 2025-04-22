@@ -6,7 +6,7 @@ export default function VehiclesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Nuestros Vehículos</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        En Lobos Patagonia Travel, nos enorgullecemos de nuestra flota de cómodas vans para pasajeros, bien mantenidas.
+        En Lobos Transfer Los Lagos, nos enorgullecemos de nuestra flota de cómodas vans para pasajeros, bien mantenidas.
         Cada vehículo recibe mantenimiento regularmente para garantizar seguridad, confiabilidad y un viaje agradable a
         través de los hermosos paisajes del Sur de Chile.
       </p>
@@ -243,7 +243,7 @@ export default function VehiclesPage() {
           Todos nuestros vehículos se someten a mantenimiento profesional regular e inspecciones de seguridad para
           garantizar la confiabilidad y la comodidad de los pasajeros. Priorizamos prácticas ecológicas en nuestras
           rutinas de mantenimiento para minimizar nuestro impacto ambiental mientras viajamos a través de los prístinos
-          paisajes de la Patagonia.
+          paisajes de la Region de Los Lagos.
         </p>
       </div>
     </div>

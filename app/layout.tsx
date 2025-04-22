@@ -8,11 +8,11 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Lobos Patagonia Travel | Transporte Familiar en el Sur de Chile",
+  title: "Lobos Transfer Los Lagos | Transporte Familiar en el Sur de Chile",
   description:
-    "Servicio de transporte de pasajeros seguro y confiable en el Sur de Chile y la Patagonia. Traslados al aeropuerto y viajes interregionales con cómodas vans de 18 pasajeros.",
-  keywords: "transporte Patagonia, viajes Sur de Chile, traslados aeropuerto Chile, van pasajeros Patagonia",
-    generator: 'v0.dev'
+    "Servicio de transporte de pasajeros seguro y confiable en el Sur de Chile y la Region de Los Lagos. Traslados al aeropuerto y viajes interregionales con cómodas vans de 18 pasajeros.",
+  keywords: "transporte Region de Los Lagos, viajes Sur de Chile, traslados aeropuerto Chile, van pasajeros Region de Los Lagos",
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({

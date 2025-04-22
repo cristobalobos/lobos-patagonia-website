@@ -9,12 +9,12 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-green-700">Our Family Story</h2>
           <p className="mb-4">
-            Lobos Patagonia Travel was born from a deep love for the breathtaking landscapes of Southern Chile and a
+            Lobos Transfer Los Lagos was born from a deep love for the breathtaking landscapes of Southern Chile and a
             desire to share this natural beauty with visitors from around the world.
           </p>
           <p className="mb-4">
             Founded in 2010 by the Lobos family, our company began with a single van and a commitment to providing safe,
-            reliable transportation across the challenging terrain of Patagonia.
+            reliable transportation across the challenging terrain of Region de Los Lagos.
           </p>
           <p>
             Today, we continue to operate as a family business, maintaining the same values of exceptional service,
@@ -50,7 +50,7 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-medium mb-2">Environmental Respect</h3>
             <p>
-              We are committed to minimizing our environmental impact and preserving the natural beauty of Patagonia.
+              We are committed to minimizing our environmental impact and preserving the natural beauty of Region de Los Lagos.
             </p>
           </div>
           <div className="text-center">
@@ -72,7 +72,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Carlos Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Founder & Driver</p>
               <p>
-                With over 20 years of driving experience in Patagonia, Carlos knows every road and trail in the region.
+                With over 20 years of driving experience in Region de Los Lagos, Carlos knows every road and trail in the region.
                 His passion for the natural beauty of Southern Chile is evident in every journey.
               </p>
             </div>
@@ -84,7 +84,7 @@ export default function AboutPage() {
               <p className="text-green-700 mb-3 text-center sm:text-left">Co-owner & Driver</p>
               <p>
                 Miguel joined the family business in 2015, bringing his expertise in customer service and local history.
-                He ensures that every passenger enjoys not just transportation, but an authentic Patagonian experience.
+                He ensures that every passenger enjoys not just transportation, but an authentic Region de Los Lagosn experience.
               </p>
             </div>
           </div>

@@ -15,9 +15,9 @@ export default function Home() {
           className="object-cover brightness-75"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lobos Patagonia Travel</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Lobos Transfer Los Lagos</h1>
           <p className="text-xl md:text-2xl max-w-2xl">
-            Conectando la belleza del Surx de Chile con transporte seguro, cómodo y respetuoso con el medio ambiente
+            Conectando la belleza del Sur de Chile con transporte seguro, cómodo y respetuoso con el medio ambiente
           </p>
           <Link
             href="/contacto"
@@ -31,15 +31,12 @@ export default function Home() {
       {/* Introduction */}
       <section className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-green-800">Bienvenidos a Lobos Patagonia Travel</h2>
+          <h2 className="text-3xl font-bold mb-6 text-green-800">Bienvenidos a Lobos Transfer Los Lagos</h2>
           <p className="text-lg mb-6">
-            Somos una empresa familiar de transporte de pasajeros ubicada en el corazón del Sur de Chile, dedicada a
-            proporcionar servicios de transporte seguros, confiables y cómodos a través de los impresionantes paisajes
-            de la Patagonia.
+            Somos una empresa familiar de transporte de pasajeros con base en Puerto Varas, dedicada a ofrecer servicios seguros, confiables y cómodos en la Región de Los Lagos, recorriendo sus paisajes más emblemáticos.
           </p>
           <p className="text-lg mb-8">
-            Con años de experiencia navegando por el terreno único de esta región, nuestros conductores profesionales
-            garantizan que llegue a su destino de manera segura mientras disfruta de la belleza natural que nos rodea.
+            Con años de experiencia en la zona, nuestros conductores profesionales aseguran un viaje tranquilo y seguro, permitiéndote disfrutar de la belleza natural del sur de Chile.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/nosotros" className="bg-stone-200 hover:bg-stone-300 px-5 py-2 rounded-md transition-colors">
@@ -60,8 +57,8 @@ export default function Home() {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-xl font-semibold mb-3 text-green-700">Traslados al Aeropuerto</h3>
               <p>
-                Transporte confiable y puntual hacia y desde los aeropuertos regionales, asegurando un inicio o final
-                tranquilo para su viaje.
+                Traslados al Aeropuerto
+                Transporte confiable y puntual hacia y desde el Aeropuerto El Tepual de Puerto Montt, asegurando un inicio o final tranquilo para su viaje por la Región de Los Lagos.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -75,7 +72,7 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3 text-green-700">Tours Personalizados</h3>
               <p>
                 Servicios de transporte personalizados para grupos que exploran las maravillas naturales de la
-                Patagonia, con conocimiento y experiencia local.
+                Region de Los Lagos, con conocimiento y experiencia local.
               </p>
             </div>
           </div>
@@ -163,9 +160,9 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo Que Dicen Nuestros Pasajeros</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <p className="text-lg italic mb-6">
-              "Nuestra familia tuvo una experiencia increíble con Lobos Patagonia Travel. Los conductores fueron
+              "Nuestra familia tuvo una experiencia increíble con Lobos Transfer Los Lagos. Los conductores fueron
               profesionales, puntuales y muy conocedores de la región. Las vans estaban limpias y cómodas, haciendo que
-              nuestro viaje por la Patagonia fuera aún más agradable. ¡Muy recomendable!"
+              nuestro viaje por la Region de Los Lagos fuera aún más agradable. ¡Muy recomendable!"
             </p>
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-stone-200 rounded-full"></div>

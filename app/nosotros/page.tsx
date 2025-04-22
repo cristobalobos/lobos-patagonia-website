@@ -9,12 +9,12 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-green-700">Nuestra Historia Familiar</h2>
           <p className="mb-4">
-            Lobos Patagonia Travel nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
+            Lobos Transfer Los Lagos nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
             de compartir esta belleza natural con visitantes de todo el mundo.
           </p>
           <p className="mb-4">
             Fundada en 2010 por la familia Lobos, nuestra empresa comenzó con una sola van y el compromiso de
-            proporcionar transporte seguro y confiable a través del desafiante terreno de la Patagonia.
+            proporcionar transporte seguro y confiable a través del desafiante terreno de la Region de Los Lagos.
           </p>
           <p>
             Hoy, continuamos operando como una empresa familiar, manteniendo los mismos valores de servicio excepcional,
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <h3 className="text-xl font-medium mb-2">Respeto Ambiental</h3>
             <p>
               Estamos comprometidos a minimizar nuestro impacto ambiental y preservar la belleza natural de la
-              Patagonia.
+              Region de Los Lagos.
             </p>
           </div>
           <div className="text-center">
@@ -76,7 +76,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Enrique Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Fundador y Conductor</p>
               <p>
-                Con más de 20 años de experiencia conduciendo en la Patagonia, Enrique conoce cada camino y sendero de
+                Con más de 20 años de experiencia conduciendo en la Region de Los Lagos, Enrique conoce cada camino y sendero de
                 la región. Su pasión por la belleza natural del Sur de Chile es evidente en cada viaje.
               </p>
             </div>

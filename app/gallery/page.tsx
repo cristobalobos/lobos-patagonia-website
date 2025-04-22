@@ -65,7 +65,7 @@ export default function GalleryPage() {
       </div>
 
       <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-8 text-center text-green-700">Patagonian Landscapes</h2>
+        <h2 className="text-2xl font-semibold mb-8 text-center text-green-700">Region de Los Lagosn Landscapes</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
@@ -86,7 +86,7 @@ export default function GalleryPage() {
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
               src="/placeholder.svg?height=600&width=600"
-              alt="Patagonian forest and mountains"
+              alt="Region de Los Lagosn forest and mountains"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
             />
@@ -175,7 +175,7 @@ export default function GalleryPage() {
       <div className="bg-green-50 p-8 rounded-lg text-center">
         <h2 className="text-2xl font-semibold mb-4 text-green-700">Share Your Journey</h2>
         <p className="mb-6">
-          Have you traveled with Lobos Patagonia Travel? We'd love to see your photos! Tag us on social media or send
+          Have you traveled with Lobos Transfer Los Lagos? We'd love to see your photos! Tag us on social media or send
           your pictures to our email to be featured in our gallery.
         </p>
         <div className="flex justify-center gap-4">
@@ -183,13 +183,13 @@ export default function GalleryPage() {
             href="#"
             className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
           >
-            #LobosPatagonia
+            #LobosRegion de Los Lagos
           </a>
           <a
-            href="mailto:photos@lobospatagonia.com"
+            href="mailto:photos@lobosRegion de Los Lagos.com"
             className="bg-stone-200 hover:bg-stone-300 px-4 py-2 rounded-md inline-block text-sm transition-colors"
           >
-            photos@lobospatagonia.com
+            photos@lobosRegion de Los Lagos.com
           </a>
         </div>
       </div>
