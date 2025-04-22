@@ -46,8 +46,8 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="text-lg font-medium mb-1">Email</h3>
-                <a href="mailto:info@lobosRegion de Los Lagos.com" className="text-green-700 hover:text-green-800 font-medium">
-                  info@lobosRegion de Los Lagos.com
+                <a href="mailto:enriquelobosw@hotmail.com " className="text-green-700 hover:text-green-800 font-medium">
+                  enriquelobosw@hotmail.com
                 </a>
                 <p className="text-sm text-stone-600 mt-1">We respond to all inquiries within 24 hours</p>
               </div>

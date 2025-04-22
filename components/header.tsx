@@ -14,6 +14,7 @@ export default function Header() {
           <Link href="/" className="font-bold text-xl text-green-800">
             Lobos Transfer Los Lagos          </Link>
 
+
           <nav className="hidden md:flex items-center space-x-6">
             <Link href="/" className="text-stone-700 hover:text-green-700 transition-colors">
               Inicio

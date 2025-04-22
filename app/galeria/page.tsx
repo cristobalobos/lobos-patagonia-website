@@ -23,7 +23,7 @@ export default function GalleryPage() {
           </div>
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/img/van_1.jpg?height=600&width=600"
               alt="Mercedes-Benz Sprinter interior"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -31,7 +31,7 @@ export default function GalleryPage() {
           </div>
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/img/van_1.jpg?height=600&width=600"
               alt="Toyota Hiace exterior"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -39,7 +39,7 @@ export default function GalleryPage() {
           </div>
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/img/van_1.jpg?height=600&width=600"
               alt="Toyota Hiace interior"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -47,7 +47,7 @@ export default function GalleryPage() {
           </div>
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/img/van_2.jpg?height=600&width=600"
               alt="Tablero y controles del vehículo"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
@@ -55,7 +55,7 @@ export default function GalleryPage() {
           </div>
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
-              src="/placeholder.svg?height=600&width=600"
+              src="/img/van_2.jpg?height=600&width=600"
               alt="Compartimento de equipaje del vehículo"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"

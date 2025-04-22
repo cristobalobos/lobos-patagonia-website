@@ -8,12 +8,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[70vh] w-full">
         <Image
-          src="/placeholder.svg?height=800&width=1600"
+          src="img/quique-oscar.jpeg?height=800&width=1600"
           alt="Paisaje patagónico con montañas y un camino"
           fill
           priority
+          quality={80}
           className="object-cover brightness-75"
         />
+
+
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Lobos Transfer Los Lagos</h1>
           <p className="text-xl md:text-2xl max-w-2xl">
@@ -94,7 +97,7 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <div className="aspect-video relative mb-4 overflow-hidden rounded-md">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/img/van_2.jpg?height=400&width=600"
                 alt="Van de 18 pasajeros"
                 fill
                 className="object-cover"
@@ -120,7 +123,7 @@ export default function Home() {
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <div className="aspect-video relative mb-4 overflow-hidden rounded-md">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/img/van_1.jpg?height=400&width=600"
                 alt="Van de 18 pasajeros"
                 fill
                 className="object-cover"

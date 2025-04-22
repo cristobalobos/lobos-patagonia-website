@@ -106,8 +106,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="shrink-0" />
-                <a href="mailto:info@lobosRegion de Los Lagos.com" className="hover:text-white transition-colors">
-                  info@lobosRegion de Los Lagos.com
+                <a href="mailto:enriquelobosw@hotmail.com" className="hover:text-white transition-colors">
+                  enriquelobosw@hotmail.com
                 </a>
               </li>
             </ul>
