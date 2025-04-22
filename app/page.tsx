@@ -17,7 +17,7 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Lobos Patagonia Travel</h1>
           <p className="text-xl md:text-2xl max-w-2xl">
-            Conectando la belleza del Sur de Chile con transporte seguro, cómodo y respetuoso con el medio ambiente
+            Conectando la belleza del Surx de Chile con transporte seguro, cómodo y respetuoso con el medio ambiente
           </p>
           <Link
             href="/contacto"
