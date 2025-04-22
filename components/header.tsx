@@ -11,8 +11,16 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+          {/* resto del menú 
           <Link href="/" className="font-bold text-xl text-green-800">
-            Lobos Transfer Los Lagos          </Link>
+            Lobos Transfer Los Lagos          </Link>*/}
+          <Link href="/" className="font-bold text-xl text-green-800">
+            <div
+              className="w-40 h-16 bg-contain bg-no-repeat bg-center bg-transparent"
+              style={{ backgroundImage: 'url("/img/logo-lobos-transfers.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '160px', height: '60px' }}
+
+            />
+          </Link>
 
 
           <nav className="hidden md:flex items-center space-x-6">

@@ -14,14 +14,14 @@ export default function VehiclesPage() {
       <div className="space-y-16">
         {/* Vehicle 1 */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">Mercedes-Benz Sprinter</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-green-700">Hyundai Staria US4</h2>
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-6">
               <div className="aspect-video relative rounded-lg overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=600&width=800"
-                  alt="Mercedes-Benz Sprinter exterior"
+                  alt="Hyundai Staria US4 exterior"
                   fill
                   className="object-cover"
                 />
@@ -29,7 +29,7 @@ export default function VehiclesPage() {
               <div className="aspect-video relative rounded-lg overflow-hidden">
                 <Image
                   src="/placeholder.svg?height=600&width=800"
-                  alt="Mercedes-Benz Sprinter interior"
+                  alt="Hyundai Staria US4 interior"
                   fill
                   className="object-cover"
                 />
@@ -162,7 +162,7 @@ export default function VehiclesPage() {
                   </li>
                   <li className="flex justify-between">
                     <span className="font-medium">Engine:</span>
-                    <span>2.8L Turbo Diesel</span>
+                    <span>2.2L Turbo Diesel</span>
                   </li>
                   <li className="flex justify-between">
                     <span className="font-medium">Transmission:</span>

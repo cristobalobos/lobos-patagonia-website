@@ -16,7 +16,7 @@ export default function GalleryPage() {
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
               src="/placeholder.svg?height=600&width=600"
-              alt="Mercedes-Benz Sprinter exterior"
+              alt="Hyundai Staria US4 exterior"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
             />
@@ -24,7 +24,7 @@ export default function GalleryPage() {
           <div className="aspect-square relative rounded-lg overflow-hidden">
             <Image
               src="/placeholder.svg?height=600&width=600"
-              alt="Mercedes-Benz Sprinter interior"
+              alt="Hyundai Staria US4 interior"
               fill
               className="object-cover hover:scale-105 transition-transform duration-300"
             />

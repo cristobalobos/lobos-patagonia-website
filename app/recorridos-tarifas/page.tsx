@@ -15,16 +15,79 @@ export default function RoutesPricesPage() {
       <div className="mb-16">
         <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">Nuestras Áreas de Servicio</h2>
         <div className="relative h-96 md:h-[500px] rounded-lg overflow-hidden mb-6">
-          <Image
-            src="/placeholder.svg?height=800&width=1200"
-            alt="Mapa de áreas de servicio en el Sur de Chile"
-            fill
-            className="object-cover"
-          />
+          <div className="w-full h-[400px] rounded-md overflow-hidden">
+            <iframe
+              title="Mapa Región de Los Lagos"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d764564.5585227108!2d-72.573!3d-41.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1713892845613!5m2!1ses!2scl"
+              width="100%"
+              height="100%"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
         </div>
         <p className="text-center text-stone-600 italic">
           Mapa interactivo que muestra nuestras principales áreas de servicio y rutas en el Sur de Chile
         </p>
+      </div>
+
+
+
+      <div className="mb-16">
+        <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">Traslados al Aeropuerto</h2>
+
+        <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
+          <h3 className="text-xl font-medium mb-4 text-green-700">Traslados al Aeropuerto El Tepual (PMC)</h3>
+          <p className="mb-6">
+            Ofrecemos traslados confiables hacia y desde el Aeropuerto El Tepual en Puerto Montt a varios destinos en la
+            Región de Los Lagos. Todos los traslados incluyen servicio de recepción y asistencia con el equipaje.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-green-50">
+                  <th className="border border-stone-200 p-3 text-left">Destino</th>
+                  <th className="border border-stone-200 p-3 text-left">Distancia</th>
+                  <th className="border border-stone-200 p-3 text-left">Duración</th>
+                  <th className="border border-stone-200 p-3 text-left">Precio (por persona)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="border border-stone-200 p-3">Puerto Montt Radio Urbano</td>
+                  <td className="border border-stone-200 p-3">15 km</td>
+                  <td className="border border-stone-200 p-3">25 min</td>
+                  <td className="border border-stone-200 p-3">$27.000</td>
+                </tr>
+                <tr className="bg-stone-50">
+                  <td className="border border-stone-200 p-3">Puerto Varas</td>
+                  <td className="border border-stone-200 p-3">30 km</td>
+                  <td className="border border-stone-200 p-3">40 min</td>
+                  <td className="border border-stone-200 p-3">$25.000</td>
+                </tr>
+                <tr>
+                  <td className="border border-stone-200 p-3">Frutillar</td>
+                  <td className="border border-stone-200 p-3">55 km</td>
+                  <td className="border border-stone-200 p-3">1 hora</td>
+                  <td className="border border-stone-200 p-3">$40.000</td>
+                </tr>
+                <tr className="bg-stone-50">
+                  <td className="border border-stone-200 p-3">Osorno</td>
+                  <td className="border border-stone-200 p-3">110 km</td>
+                  <td className="border border-stone-200 p-3">1.5 horas</td>
+                  <td className="border border-stone-200 p-3">$100.000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p className="mt-4 text-sm text-stone-600 italic">
+            * Descuentos para grupos disponibles para 4 o más pasajeros que viajen juntos
+          </p>
+        </div>
       </div>
 
       <div className="mb-16">
@@ -57,46 +120,7 @@ export default function RoutesPricesPage() {
               <div className="bg-green-50 p-4 rounded-lg flex flex-col justify-center">
                 <div className="text-center">
                   <p className="text-sm text-green-700 mb-1">Desde</p>
-                  <p className="text-3xl font-bold text-green-800 mb-2">$15 USD</p>
-                  <p className="text-sm text-stone-600 mb-4">por persona, un trayecto</p>
-                  <Link
-                    href="/contacto"
-                    className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
-                  >
-                    Reservar Esta Ruta
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="text-xl font-medium mb-4 text-green-700">Puerto Montt a Bariloche (Argentina)</h3>
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="md:col-span-2">
-                <p className="mb-4">
-                  Una ruta internacional que cruza la Cordillera de los Andes, conectando Puerto Montt en Chile con la
-                  hermosa ciudad turística de montaña de Bariloche en Argentina.
-                </p>
-                <ul className="space-y-2 mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                    <span>Distancia: 230 km (aproximadamente 6 horas incluyendo cruce de frontera)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                    <span>Servicio disponible 3 veces por semana</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                    <span>Asistencia con procedimientos de cruce de frontera</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-green-50 p-4 rounded-lg flex flex-col justify-center">
-                <div className="text-center">
-                  <p className="text-sm text-green-700 mb-1">Desde</p>
-                  <p className="text-3xl font-bold text-green-800 mb-2">$85 USD</p>
+                  <p className="text-3xl font-bold text-green-800 mb-2">$20.000</p>
                   <p className="text-sm text-stone-600 mb-4">por persona, un trayecto</p>
                   <Link
                     href="/contacto"
@@ -135,7 +159,7 @@ export default function RoutesPricesPage() {
               <div className="bg-green-50 p-4 rounded-lg flex flex-col justify-center">
                 <div className="text-center">
                   <p className="text-sm text-green-700 mb-1">Desde</p>
-                  <p className="text-3xl font-bold text-green-800 mb-2">$45 USD</p>
+                  <p className="text-3xl font-bold text-green-800 mb-2">$130.000</p>
                   <p className="text-sm text-stone-600 mb-4">por persona, un trayecto</p>
                   <Link
                     href="/contacto"
@@ -174,73 +198,21 @@ export default function RoutesPricesPage() {
               <div className="bg-green-50 p-4 rounded-lg flex flex-col justify-center">
                 <div className="text-center">
                   <p className="text-sm text-green-700 mb-1">Desde</p>
-                  <p className="text-3xl font-bold text-green-800 mb-2">$40 USD</p>
+                  <p className="text-3xl font-bold text-green-800 mb-2">$40.000</p>
                   <p className="text-sm text-stone-600 mb-4">por persona, un trayecto</p>
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.me/56993135819?text=Hola%2C%20me%20interesar%C3%ADa%20un%20traslado%20de%20Puerto%20Montt%20a%20Puerto%20Varas"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
                   >
                     Reservar Esta Ruta
-                  </Link>
+                  </a>
+
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div className="mb-16">
-        <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">Traslados al Aeropuerto</h2>
-
-        <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-          <h3 className="text-xl font-medium mb-4 text-green-700">Traslados al Aeropuerto El Tepual (PMC)</h3>
-          <p className="mb-6">
-            Ofrecemos traslados confiables hacia y desde el Aeropuerto El Tepual en Puerto Montt a varios destinos en la
-            Región de Los Lagos. Todos los traslados incluyen servicio de recepción y asistencia con el equipaje.
-          </p>
-
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
-              <thead>
-                <tr className="bg-green-50">
-                  <th className="border border-stone-200 p-3 text-left">Destino</th>
-                  <th className="border border-stone-200 p-3 text-left">Distancia</th>
-                  <th className="border border-stone-200 p-3 text-left">Duración</th>
-                  <th className="border border-stone-200 p-3 text-left">Precio (por persona)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td className="border border-stone-200 p-3">Centro de Puerto Montt</td>
-                  <td className="border border-stone-200 p-3">15 km</td>
-                  <td className="border border-stone-200 p-3">25 min</td>
-                  <td className="border border-stone-200 p-3">$20 USD</td>
-                </tr>
-                <tr className="bg-stone-50">
-                  <td className="border border-stone-200 p-3">Puerto Varas</td>
-                  <td className="border border-stone-200 p-3">30 km</td>
-                  <td className="border border-stone-200 p-3">40 min</td>
-                  <td className="border border-stone-200 p-3">$25 USD</td>
-                </tr>
-                <tr>
-                  <td className="border border-stone-200 p-3">Frutillar</td>
-                  <td className="border border-stone-200 p-3">55 km</td>
-                  <td className="border border-stone-200 p-3">1 hora</td>
-                  <td className="border border-stone-200 p-3">$35 USD</td>
-                </tr>
-                <tr className="bg-stone-50">
-                  <td className="border border-stone-200 p-3">Osorno</td>
-                  <td className="border border-stone-200 p-3">110 km</td>
-                  <td className="border border-stone-200 p-3">1.5 horas</td>
-                  <td className="border border-stone-200 p-3">$45 USD</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <p className="mt-4 text-sm text-stone-600 italic">
-            * Descuentos para grupos disponibles para 4 o más pasajeros que viajen juntos
-          </p>
         </div>
       </div>
 

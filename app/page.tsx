@@ -103,8 +103,8 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-green-700">Mercedes-Benz Sprinter</h3>
-            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2020</p>
+            <h3 className="text-xl font-semibold mb-2 text-green-700">Hyundai Staria US4</h3>
+            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2022</p>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-700 rounded-full"></span>
@@ -129,8 +129,8 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold mb-2 text-green-700">Toyota Hiace</h3>
-            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2021</p>
+            <h3 className="text-xl font-semibold mb-2 text-green-700">Hyundai Staria US4 CRDI</h3>
+            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2020</p>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-700 rounded-full"></span>
