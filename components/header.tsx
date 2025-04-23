@@ -17,7 +17,7 @@ export default function Header() {
           <Link href="/" className="font-bold text-xl text-green-800">
             <div
               className="w-40 h-16 bg-contain bg-no-repeat bg-center bg-transparent"
-              style={{ backgroundImage: 'url("/img/logo-lobos-transfers.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '160px', height: '60px' }}
+              style={{ backgroundImage: 'url("/img/logo-lobos.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '160px', height: '70px' }}
 
             />
           </Link>
