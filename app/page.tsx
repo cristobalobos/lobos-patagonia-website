@@ -21,7 +21,17 @@ export default function Home() {
           fill
           priority
           quality={80}
-          className="brightness-75"
+          className="object-cover brightness-75 hidden md:block"
+        />
+
+        {/* Banner para mobile */}
+        <Image
+          src="/img/banner-lobos-mobile.png"
+          alt="Paisaje Región de Los Lagos"
+          fill
+          priority
+          quality={80}
+          className="object-cover brightness-75 block md:hidden"
         />
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
