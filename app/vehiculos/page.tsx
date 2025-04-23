@@ -6,7 +6,7 @@ export default function VehiclesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Nuestros Vehículos</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        En Lobos Transfer Los Lagos, nos enorgullece contar con una flota compuesta por dos cómodas vans Hyundai Staria US4, modelos 2022.
+        En Lobos Transfer, nos enorgullece contar con una flota compuesta por dos cómodas vans Hyundai Staria US4, modelos 2022.
         Ambos vehículos se mantienen en excelentes condiciones gracias a un programa de mantenimiento regular, lo que nos permite ofrecer un servicio seguro, confiable y confortable para recorrer los hermosos paisajes de la Región de Los Lagos.
       </p>
 

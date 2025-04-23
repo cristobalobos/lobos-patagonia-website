@@ -46,22 +46,20 @@ export default function AboutPage() {
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-green-700 text-2xl">🌿</span>
+              <span className="text-green-700 text-2xl">🚗</span>
             </div>
-            <h3 className="text-xl font-medium mb-2">Respeto Ambiental</h3>
+            <h3 className="text-xl font-medium mb-2">Puntualidad Garantizada</h3>
             <p>
-              Estamos comprometidos a minimizar nuestro impacto ambiental y preservar la belleza natural de la
-              Region de Los Lagos.
+              Valoramos tu tiempo. Nuestros traslados se caracterizan por su puntualidad y cumplimiento de los horarios acordados, asegurando un viaje sin contratiempos.
             </p>
           </div>
           <div className="text-center">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span className="text-green-700 text-2xl">🤝</span>
+              <span className="text-green-700 text-2xl">✨</span>
             </div>
-            <h3 className="text-xl font-medium mb-2">Conexión Comunitaria</h3>
+            <h3 className="text-xl font-medium mb-2">Presentación Profesional</h3>
             <p>
-              Apoyamos a las comunidades locales y nos esforzamos por proporcionar experiencias auténticas que
-              beneficien a la región.
+              Mantenemos nuestros vehículos en excelente estado de limpieza y contamos con conductores atentos, bien presentados y preparados para ofrecer una experiencia de viaje cómoda y confiable.
             </p>
           </div>
         </div>

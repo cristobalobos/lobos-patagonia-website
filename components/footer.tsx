@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-white">Lobos Transfer Los Lagos</h3>
+            <h3 className="text-xl font-bold mb-4 text-white">Lobos Transfer</h3>
             <p className="mb-4">
               Empresa familiar de transporte de pasajeros que proporciona transporte seguro y cómodo a través de los
               hermosos paisajes del Sur de Chile.
@@ -105,7 +105,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-stone-700 pt-6 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} Lobos Transfer Los Lagos. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Lobos Transfer. Todos los derechos reservados.</p>
           <p className="mt-2 text-stone-400">
             Sitio Web construido por Cristobal Lobos.
           </p>

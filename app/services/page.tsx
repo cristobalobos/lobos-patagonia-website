@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Our Services</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        Lobos Transfer Los Lagos offers a range of transportation services designed to meet the needs of travelers
+        Lobos Transfer offers a range of transportation services designed to meet the needs of travelers
         exploring the beautiful landscapes of Southern Chile. All our services prioritize safety, comfort, and
         environmental responsibility.
       </p>

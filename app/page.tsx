@@ -37,7 +37,7 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
 
           <p className="text-xl md:text-2xl max-w-2xl">
-            Conectando la belleza del Sur de Chile con transporte seguro, cómodo y respetuoso con el medio ambiente
+            Conectamos personas y empresas en la Región de Los Lagos con un servicio de traslado privado, seguro y confiable.
           </p>
           <Link
             href="/contacto"
@@ -51,12 +51,12 @@ export default function Home() {
       {/* Introduction */}
       <section className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-green-800">Bienvenidos a Lobos Transfer Los Lagos</h2>
+          <h2 className="text-3xl font-bold mb-6 text-green-800">Bienvenidos a Lobos Transfer</h2>
           <p className="text-lg mb-6">
-            Somos una empresa familiar de transporte de pasajeros con base en Puerto Varas, dedicada a ofrecer servicios seguros, confiables y cómodos en la Región de Los Lagos, recorriendo sus paisajes más emblemáticos.
+            Lobos Transfer es una empresa familiar de transporte de pasajeros con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
           </p>
           <p className="text-lg mb-8">
-            Con años de experiencia en la zona, nuestros conductores profesionales aseguran un viaje tranquilo y seguro, permitiéndote disfrutar de la belleza natural del sur de Chile.
+            Contamos con vehículos autorizados según el Decreto 80, ideales para empresas, instituciones y clientes que requieren un servicio seguro, puntual y profesional. Nuestros conductores están altamente capacitados y comprometidos con una atención de excelencia, garantizando comodidad, presentación y confiabilidad en cada viaje.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/nosotros" className="bg-stone-200 hover:bg-stone-300 px-5 py-2 rounded-md transition-colors">
@@ -177,10 +177,10 @@ export default function Home() {
       {/* Testimonial */}
       <section className="bg-stone-100 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo Que Dicen Nuestros Pasajeros</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo Que Dicen Nuestros Clientes</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <p className="text-lg italic mb-6">
-              "Nuestra familia tuvo una experiencia increíble con Lobos Transfer Los Lagos. Los conductores fueron
+              "Nuestra familia tuvo una experiencia increíble con Lobos Transfer. Los conductores fueron
               profesionales, puntuales y muy conocedores de la región. Las vans estaban limpias y cómodas, haciendo que
               nuestro viaje por la Region de Los Lagos fuera aún más agradable. ¡Muy recomendable!"
             </p>

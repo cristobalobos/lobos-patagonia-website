@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* resto del menú 
           <Link href="/" className="font-bold text-xl text-green-800">
-            Lobos Transfer Los Lagos          </Link>*/}
+            Lobos Transfer          </Link>*/}
           <Link href="/" className="font-bold text-xl text-green-800">
             <div
               className="w-40 h-16 bg-contain bg-no-repeat bg-center bg-transparent"
@@ -39,10 +39,12 @@ export default function Header() {
             <Link href="/vehiculos" className="text-stone-700 hover:text-green-700 transition-colors">
               Vehículos
             </Link>
-
-            {/*  <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
-              Galería
-            </Link>*/}
+            <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
+              Nuestros Clientes
+            </Link>
+            <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
+              Preguntas Frecuentes
+            </Link>
             <Link
               href="/contacto"
               className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors"
