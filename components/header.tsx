@@ -39,10 +39,10 @@ export default function Header() {
             <Link href="/vehiculos" className="text-stone-700 hover:text-green-700 transition-colors">
               Vehículos
             </Link>
-            <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
+            <Link href="/services" className="text-stone-700 hover:text-green-700 transition-colors">
               Nuestros Clientes
             </Link>
-            <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
+            <Link href="/faq" className="text-stone-700 hover:text-green-700 transition-colors">
               Preguntas Frecuentes
             </Link>
             <Link
@@ -86,7 +86,7 @@ export default function Header() {
               className="block text-stone-700 hover:text-green-700 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Servicios
+              Nuestros Clientes
             </Link>
             <Link
               href="/vehiculos"
@@ -103,11 +103,11 @@ export default function Header() {
               Recorridos y Tarifas
             </Link>
             <Link
-              href="/galeria"
+              href="/faq"
               className="block text-stone-700 hover:text-green-700 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Galería
+              Preguntas Frecuentes
             </Link>
             <Link
               href="/contacto"
