@@ -94,6 +94,7 @@ export default function GalleryPage() {
         </div>
       </div>
 
+      {/* Comparte }
       <div className="bg-green-50 p-8 rounded-lg text-center">
         <h2 className="text-2xl font-semibold mb-4 text-green-700">Comparte Tu Viaje</h2>
         <p className="mb-6">
@@ -115,6 +116,9 @@ export default function GalleryPage() {
           </a>
         </div>
       </div>
+
+      {*/}
     </div>
+
   )
 }

@@ -7,15 +7,22 @@ export default function Home() {
     <div className="flex flex-col gap-16 pb-16">
       {/* Hero Section */}
       <section className="relative h-[70vh] w-full">
-        <Image
+        {/*    <Image
           src="img/quique-oscar.jpeg?height=800&width=1600"
           alt="Paisaje patagónico con montañas y un camino"
           fill
           priority
           quality={80}
           className="object-cover brightness-75"
+        />*/}
+        <Image
+          src="img/banner-lobos.png"
+          alt="Paisaje patagónico con montañas y un camino"
+          fill
+          priority
+          quality={80}
+          className="brightness-75"
         />
-
 
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
 
@@ -45,7 +52,7 @@ export default function Home() {
             <Link href="/nosotros" className="bg-stone-200 hover:bg-stone-300 px-5 py-2 rounded-md transition-colors">
               Nuestra Historia
             </Link>
-            <Link href="/servicios" className="bg-stone-200 hover:bg-stone-300 px-5 py-2 rounded-md transition-colors">
+            <Link href="/recorridos-tarifas" className="bg-stone-200 hover:bg-stone-300 px-5 py-2 rounded-md transition-colors">
               Nuestros Servicios
             </Link>
           </div>
@@ -81,7 +88,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-10">
             <Link
-              href="/servicios"
+              href="/recorridos-tarifas"
               className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium"
             >
               Ver todos los servicios <ArrowRight size={18} />

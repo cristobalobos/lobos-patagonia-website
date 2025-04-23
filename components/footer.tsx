@@ -36,11 +36,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-white transition-colors">
-                  Servicios
-                </Link>
-              </li>
-              <li>
                 <Link href="/vehiculos" className="hover:text-white transition-colors">
                   Vehículos
                 </Link>
@@ -48,11 +43,6 @@ export default function Footer() {
               <li>
                 <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
                   Recorridos y Tarifas
-                </Link>
-              </li>
-              <li>
-                <Link href="/galeria" className="hover:text-white transition-colors">
-                  Galería
                 </Link>
               </li>
               <li>
@@ -67,27 +57,27 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">Nuestros Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/servicios" className="hover:text-white transition-colors">
+                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
                   Traslados al Aeropuerto
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-white transition-colors">
+                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
                   Viajes Interregionales
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-white transition-colors">
+                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
                   Tours Personalizados
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-white transition-colors">
+                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
                   Transporte para Grupos
                 </Link>
               </li>
               <li>
-                <Link href="/servicios" className="hover:text-white transition-colors">
+                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
                   Servicios Corporativos
                 </Link>
               </li>
@@ -117,7 +107,7 @@ export default function Footer() {
         <div className="border-t border-stone-700 pt-6 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Lobos Transfer Los Lagos. Todos los derechos reservados.</p>
           <p className="mt-2 text-stone-400">
-            Diseñado con ❤️ para el medio ambiente y la hermosa región de la Region de Los Lagos
+            Sitio Web construido por Cristobal Lobos.
           </p>
         </div>
       </div>

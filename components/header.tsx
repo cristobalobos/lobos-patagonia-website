@@ -27,21 +27,22 @@ export default function Header() {
             <Link href="/" className="text-stone-700 hover:text-green-700 transition-colors">
               Inicio
             </Link>
-            <Link href="/nosotros" className="text-stone-700 hover:text-green-700 transition-colors">
-              Nosotros
-            </Link>
-            <Link href="/servicios" className="text-stone-700 hover:text-green-700 transition-colors">
-              Servicios
-            </Link>
-            <Link href="/vehiculos" className="text-stone-700 hover:text-green-700 transition-colors">
-              Vehículos
-            </Link>
             <Link href="/recorridos-tarifas" className="text-stone-700 hover:text-green-700 transition-colors">
               Recorridos y Tarifas
             </Link>
-            <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
-              Galería
+            <Link href="/nosotros" className="text-stone-700 hover:text-green-700 transition-colors">
+              Nosotros
             </Link>
+            {/*  <Link href="/servicios" className="text-stone-700 hover:text-green-700 transition-colors">
+              Servicios
+            </Link> */}
+            <Link href="/vehiculos" className="text-stone-700 hover:text-green-700 transition-colors">
+              Vehículos
+            </Link>
+
+            {/*  <Link href="/galeria" className="text-stone-700 hover:text-green-700 transition-colors">
+              Galería
+            </Link>*/}
             <Link
               href="/contacto"
               className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors"

@@ -23,7 +23,7 @@ export default function AboutPage() {
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden">
           <Image
-            src="/placeholder.svg?height=600&width=800"
+            src="/img/quique-oscar.jpeg?height=600&width=800"
             alt="La familia Lobos frente a sus vans"
             fill
             className="object-cover"
@@ -71,7 +71,10 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">Conoce a Nuestro Equipo</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col sm:flex-row gap-4 items-center sm:items-start">
-            <div className="w-24 h-24 bg-stone-200 rounded-full shrink-0"></div>
+            <div
+              className="w-24 h-24 rounded-full bg-cover bg-center shrink-0"
+              style={{ backgroundImage: "url('/img/quique.jpeg')" }}
+            ></div>
             <div>
               <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Enrique Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Fundador y Conductor</p>
@@ -82,14 +85,15 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm flex flex-col sm:flex-row gap-4 items-center sm:items-start">
-            <div className="w-24 h-24 bg-stone-200 rounded-full shrink-0"></div>
+            <div
+              className="w-24 h-24 rounded-full bg-cover bg-center shrink-0"
+              style={{ backgroundImage: "url('/img/oscar.jpeg')" }}
+            ></div>
             <div>
               <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Óscar Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Copropietario y Conductor</p>
               <p>
-                Óscar se unió al negocio familiar en 2015, aportando su experiencia en servicio al cliente e historia
-                local. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica
-                experiencia patagónica.
+                Óscar se unió al negocio familiar en 2013, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
               </p>
             </div>
           </div>

@@ -122,12 +122,14 @@ export default function RoutesPricesPage() {
                   <p className="text-sm text-green-700 mb-1">Desde</p>
                   <p className="text-3xl font-bold text-green-800 mb-2">$20.000</p>
                   <p className="text-sm text-stone-600 mb-4">por persona, un trayecto</p>
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.me/56993135819?text=Hola%2C%20me%20interesar%C3%ADa%20un%20traslado%20de%20Puerto%20Montt%20a%20Puerto%20Varas"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
                   >
                     Reservar Esta Ruta
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -161,12 +163,14 @@ export default function RoutesPricesPage() {
                   <p className="text-sm text-green-700 mb-1">Desde</p>
                   <p className="text-3xl font-bold text-green-800 mb-2">$130.000</p>
                   <p className="text-sm text-stone-600 mb-4">por persona, un trayecto</p>
-                  <Link
-                    href="/contacto"
+                  <a
+                    href="https://wa.me/56993135819?text=Hola%2C%20me%20interesar%C3%ADa%20un%20traslado%20de%20Puerto%20Montt%20a%20Puerto%20Varas"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
                   >
                     Reservar Esta Ruta
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
