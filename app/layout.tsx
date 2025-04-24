@@ -12,7 +12,10 @@ export const metadata: Metadata = {
   description:
     "Servicio de transporte de pasajeros seguro y confiable en el Sur de Chile y la Region de Los Lagos. Traslados al aeropuerto y viajes interregionales con cómodas vans de 18 pasajeros.",
   keywords: "transporte Region de Los Lagos, viajes Sur de Chile, traslados aeropuerto Chile, van pasajeros Region de Los Lagos",
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+  icons: {
+    icon: "/img/logo-lobos.png", // o favicon.png si prefieres
+  },
 }
 
 export default function RootLayout({
