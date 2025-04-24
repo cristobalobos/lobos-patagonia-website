@@ -12,8 +12,7 @@ export default function GalleryPage() {
           <div>
             <h3 className="text-lg font-medium mb-2 text-green-700">¿Con cuánta anticipación debo reservar?</h3>
             <p>
-              Recomendamos reservar con al menos 48 horas de anticipación para rutas estándar, y 7 días para tours
-              personalizados o viajes internacionales. Sin embargo, a veces podemos acomodar solicitudes de último
+              Recomendamos reservar con al menos 48 horas de anticipación para rutas estándar. Sin embargo, a veces podemos acomodar solicitudes de último
               momento.
             </p>
           </div>

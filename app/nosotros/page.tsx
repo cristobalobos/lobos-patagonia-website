@@ -9,11 +9,11 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-green-700">Nuestra Historia Familiar</h2>
           <p className="mb-4">
-            Lobos Transfer Los Lagos nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
+            Lobos Transfer nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
             de compartir esta belleza natural con visitantes de todo el mundo.
           </p>
           <p className="mb-4">
-            Fundada en 2010 por la familia Lobos, nuestra empresa comenzó con una sola van y el compromiso de
+            Fundada en 2005 por la familia Lobos, nuestra empresa comenzó con una solo taxi y el compromiso de
             proporcionar transporte seguro y confiable a través del desafiante terreno de la Region de Los Lagos.
           </p>
           <p>
@@ -91,7 +91,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Óscar Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Copropietario y Conductor</p>
               <p>
-                Óscar se unió al negocio familiar en 2013, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
+                Óscar se unió al negocio familiar en 2016, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
               </p>
             </div>
           </div>
