@@ -79,7 +79,7 @@ export default function Header() {
               Nosotros
             </Link>
             <Link
-              href="/servicios"
+              href="/clientes"
               className="block text-stone-700 hover:text-green-700 transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
