@@ -44,6 +44,7 @@ export default function RoutesPricesPage() {
             Ofrecemos traslados confiables desde y hacia el Aeropuerto El Tepual en Puerto Montt a varios destinos dentro del <strong>radio urbano</strong> en la Región de Los Lagos.
           </p>
 
+
           <div className="overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
@@ -82,7 +83,16 @@ export default function RoutesPricesPage() {
               </tbody>
             </table>
           </div>
-
+          <p className="mt-4 text-sm text-stone-600 italic">
+            <a
+              href="https://wa.me/56990957491?text=Hola%2C%20quisiera%20reservar%20un%20traslado%20al%20aeropuerto%20El%20Tepual%20de%20Puerto%20Montt."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
+            >
+              Reservar traslado
+            </a>
+          </p>
           <p className="mt-4 text-sm text-stone-600 italic">
             * Para grupos de 4 o más pasajeros, consultar por tarifa especial. Ofrecemos precios ajustados según el tamaño del grupo y el destino.
           </p>
@@ -122,7 +132,7 @@ export default function RoutesPricesPage() {
                   <p className="text-3xl font-bold text-green-800 mb-2">$20.000</p>
                   <p className="text-sm text-stone-600 mb-4">hasta 3 personas, un trayecto</p>
                   <a
-                    href="https://wa.me/56993135819?text=Hola%2C%20me%20interesar%C3%ADa%20un%20traslado%20de%20Puerto%20Montt%20a%20Puerto%20Varas"
+                    href="https://wa.me/56993135819?text=Hola%2C%20quisiera%20reservar%20un%20traslado%20desde%20Puerto%20Varas%20a%20Puerto%20Montt.."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
@@ -158,7 +168,7 @@ export default function RoutesPricesPage() {
                   <p className="text-3xl font-bold text-green-800 mb-2">30.000</p>
                   <p className="text-sm text-stone-600 mb-4">hasta 3 personas, un trayecto</p>
                   <a
-                    href="https://wa.me/56993135819?text=Hola%2C%20me%20interesar%C3%ADa%20un%20traslado%20de%20Puerto%20Montt%20a%20Puerto%20Varas"
+                    href="https://wa.me/56993135819?text=Hola%2C%20quisiera%20reservar%20un%20traslado%20desde%20Puerto%20Varas%20a%20Frutillar."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"
@@ -194,7 +204,7 @@ export default function RoutesPricesPage() {
                   <p className="text-3xl font-bold text-green-800 mb-2">$100.000</p>
                   <p className="text-sm text-stone-600 mb-4">hasta 3 personas, un trayecto</p>
                   <a
-                    href="https://wa.me/56993135819?text=Hola%2C%20me%20interesar%C3%ADa%20un%20traslado%20de%20Puerto%20Montt%20a%20Puerto%20Varas"
+                    href="https://wa.me/56993135819?text=Hola%2C%20quisiera%20reservar%20un%20traslado%20desde%20Puerto%20Varas%20a%20Osorno."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-block text-sm transition-colors"

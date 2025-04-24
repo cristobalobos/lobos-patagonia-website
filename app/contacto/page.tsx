@@ -1,115 +1,85 @@
-import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
-
-const styles = {
-  container: "container mx-auto px-4 py-16 max-w-5xl",
-  title: "text-4xl font-bold mb-8 text-center text-green-800",
-  paragraph: "text-lg text-center max-w-3xl mx-auto mb-16",
-  grid: "grid md:grid-cols-2 gap-12 mb-16",
-  subtitle: "text-2xl font-semibold mb-6 text-green-700",
-  item: "flex items-start gap-4",
-  iconBox: "bg-green-100 p-3 rounded-full text-green-700",
-  label: "text-lg font-medium mb-1",
-  link: "text-green-700 hover:text-green-800 font-medium flex items-center gap-2",
-  tag: "bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full",
-  button: "bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-flex items-center gap-2 transition-colors",
-  buttonAlt: "ml-3 bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-flex items-center gap-2 transition-colors",
-  note: "text-sm text-stone-600 mt-1",
-  location: "text-stone-600",
-};
+import { Phone, Mail, MapPin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Contáctanos</h1>
+    <div className="container mx-auto px-4 py-16 max-w-4xl">
+      <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Contáctanos</h1>
 
-      <p className={styles.paragraph}>
-        ¿Listo para reservar tu transporte en el Sur de Chile? ¿Tienes preguntas sobre nuestros servicios o rutas? Ponte
-        en contacto con nuestro equipo utilizando cualquiera de los métodos de contacto a continuación.
+      <p className="text-lg text-center max-w-2xl mx-auto mb-12">
+        ¿Listo para reservar tu transporte? ¿Tienes preguntas sobre nuestros servicios? Contáctanos por WhatsApp, llamada telefónica o correo electrónico. Estamos para ayudarte.
       </p>
 
-      <div className={styles.grid}>
-        {/* Columna de contacto directo */}
-        <div>
-          <h2 className={styles.subtitle}>Ponte en Contacto</h2>
-          <div className="space-y-6">
-            <div className={styles.item}>
-              <div className={styles.iconBox}>
-                <Phone size={24} />
-              </div>
+      <div className="space-y-12">
+        {/* Teléfonos y WhatsApp */}
+        <div className="flex items-start gap-4">
+          <div className="bg-green-100 p-3 rounded-full text-green-700 shrink-0">
+            <Phone size={24} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-semibold mb-3 text-green-700">Teléfonos & WhatsApp</h2>
+            <div className="space-y-4">
               <div>
-                <h3 className={styles.label}>Teléfono</h3>
-                <p className="mb-1">Enrique Lobos (Conductor 1)</p>
-                <a href="tel:+56990957491" className={styles.link}>
+                <p className="font-medium">Enrique Lobos</p>
+                <a href="tel:+56990957491" className="text-green-700 hover:text-green-800 block">
                   +56 9 9095 7491
-                  <span className={styles.tag}>WhatsApp</span>
                 </a>
-                <p className="mt-3 mb-1">Óscar Lobos (Conductor 2)</p>
-                <a href="tel:+56993135819" className={styles.link}>
-                  +56 9 9313 5819
-                  <span className={styles.tag}>WhatsApp</span>
+                <a
+                  href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-md mt-2 transition-colors text-sm"
+                >
+                  <FaWhatsapp /> Chatear por WhatsApp
                 </a>
-              </div>
-            </div>
-
-            <div className={styles.item}>
-              <div className={styles.iconBox}>
-                <Mail size={24} />
               </div>
               <div>
-                <h3 className={styles.label}>Correo Electrónico</h3>
-                <a href="mailto:enriquelobosw@hotmail.com" className={styles.link}>
-                  enriquelobosw@hotmail.com
+                <p className="font-medium mt-6">Óscar Lobos</p>
+                <a href="tel:+56993135819" className="text-green-700 hover:text-green-800 block">
+                  +56 9 9313 5819
                 </a>
-                <p className={styles.note}>Respondemos a todas las consultas dentro de las 24 horas</p>
+                <a
+                  href="https://wa.me/56993135819?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-md mt-2 transition-colors text-sm"
+                >
+                  <FaWhatsapp /> Chatear por WhatsApp
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Columna de WhatsApp y Ubicación */}
-        <div>
-          <h2 className={styles.subtitle}>Envíanos un Mensaje</h2>
-
-          <div className={styles.item}>
-            <div className={styles.iconBox}>
-              <MessageSquare size={24} />
-            </div>
-            <div>
-              <h3 className={styles.label}>WhatsApp</h3>
-              <p className="mb-3">Para una respuesta más rápida, contáctanos directamente vía WhatsApp:</p>
-              <div className="space-y-3">
-                <a
-                  href="https://wa.me/56990957491"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.button}
-                >
-                  Chatear con Enrique
-                </a>
-                <a
-                  href="https://wa.me/56993135819"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.buttonAlt}
-                >
-                  Chatear con Óscar
-                </a>
-              </div>
-            </div>
+        {/* Correo */}
+        <div className="flex items-start gap-4">
+          <div className="bg-green-100 p-3 rounded-full text-green-700 shrink-0">
+            <Mail size={24} />
           </div>
+          <div>
+            <h2 className="text-2xl font-semibold mb-3 text-green-700">Correo Electrónico</h2>
+            <a
+              href="mailto:enriquelobosw@hotmail.com"
+              className="text-green-700 hover:text-green-800 font-medium block"
+            >
+              enriquelobosw@hotmail.com
+            </a>
+            <p className="text-stone-600 text-sm mt-1">Respondemos a todas las consultas dentro de las 24 horas.</p>
+          </div>
+        </div>
 
-          <div className={`${styles.item} mt-6`}>
-            <div className={styles.iconBox}>
-              <MapPin size={24} />
-            </div>
-            <div>
-              <h3 className={styles.label}>Ubicación</h3>
-              <p className="mb-1">Puerto Varas, Región de Los Lagos</p>
-              <p className={styles.location}>Sur de Chile</p>
-              <p className={styles.note}>
-                Proporcionamos servicio en toda la Región de Los Lagos y Los Ríos
-              </p>
-            </div>
+        {/* Ubicación */}
+        <div className="flex items-start gap-4">
+          <div className="bg-green-100 p-3 rounded-full text-green-700 shrink-0">
+            <MapPin size={24} />
+          </div>
+          <div>
+            <h2 className="text-2xl font-semibold mb-3 text-green-700">Ubicación</h2>
+            <p className="mb-1">Puerto Varas, Región de Los Lagos</p>
+            <p className="text-stone-600">Sur de Chile</p>
+            <p className="text-sm text-stone-600 mt-1">
+              Proporcionamos servicio en toda la Región de Los Lagos y Los Ríos
+            </p>
           </div>
         </div>
       </div>

@@ -198,7 +198,7 @@ export default function Home() {
       {/* Testimonial */}
       <section className="bg-stone-100 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo Que Dicen Nuestros Clientes</h2>
+          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo que dicen nuestros clientes</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm">
             <p className="text-lg italic mb-6">
               "Nuestra familia tuvo una experiencia increíble con Lobos Transfer. Los conductores fueron
@@ -218,7 +218,7 @@ export default function Home() {
 
       {/* CTA */}
       <section className="container mx-auto px-4 max-w-4xl text-center">
-        <h2 className="text-3xl font-bold mb-6 text-green-800">¿Listo para Viajar con Nosotros?</h2>
+        <h2 className="text-3xl font-bold mb-6 text-green-800">¿Listo para viajar con nosotros?</h2>
         <p className="text-lg mb-8">
           Contáctanos hoy para reservar tu transporte a través de los hermosos paisajes del Sur de Chile.
         </p>
