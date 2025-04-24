@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
-import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function ContactPage() {
   return (
@@ -30,7 +30,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-md mt-2 transition-colors text-sm"
                 >
-                  <FaWhatsapp /> Chatear por WhatsApp
+                  Chatear por WhatsApp
                 </a>
               </div>
               <div>
@@ -44,7 +44,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-md mt-2 transition-colors text-sm"
                 >
-                  <FaWhatsapp /> Chatear por WhatsApp
+                  Chatear por WhatsApp
                 </a>
               </div>
             </div>
