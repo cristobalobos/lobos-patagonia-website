@@ -6,47 +6,68 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-16 pb-16">
       {/* Hero Section */}
+
+
+
+
+
       <section className="relative h-[70vh] w-full">
-        {/*    <Image
-          src="img/quique-oscar.jpeg?height=800&width=1600"
-          alt="Paisaje patagónico con montañas y un camino"
-          fill
-          priority
-          quality={80}
-          className="object-cover brightness-75"
-        />*/}
-        <Image
-          src="img/banner-lobos.png"
-          alt="Paisaje patagónico con montañas y un camino"
-          fill
-          priority
-          quality={80}
-          className="object-cover brightness-75 hidden md:block"
-        />
 
-        {/* Banner para mobile */}
-        <Image
-          src="/img/banner-lobos-mobile.png"
-          alt="Paisaje Región de Los Lagos"
-          fill
-          priority
-          quality={80}
-          className="object-cover brightness-75 block md:hidden"
-        />
+        {/* Imagen y overlay para desktop */}
+        <div className="relative h-full w-full hidden md:block">
+          <Image
+            src="/img/banner-lobos.png"
+            alt="Paisaje patagónico con montañas y un camino"
+            fill
+            priority
+            quality={80}
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40 z-10"></div>
 
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-green p-4">
+          <div className="absolute inset-0 z-20 flex items-center justify-center text-white text-center p-4">
+            <div>
+              <p className="text-2xl md:text-3xl max-w-2xl">
+                Conectamos personas y empresas en la Región de Los Lagos con un servicio de traslado privado, seguro y confiable.
+              </p>
+              <Link
+                href="/contacto"
+                className="mt-8 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
+              >
+                Contáctanos <ArrowRight size={18} />
+              </Link>
+            </div>
+          </div>
+        </div>
 
-          <p className="text-xl md:text-2xl max-w-2xl">
-            Conectamos personas y empresas en la Región de Los Lagos con un servicio de traslado privado, seguro y confiable.
-          </p>
-          <Link
-            href="/contacto"
-            className="mt-8 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md flex items-center gap-2 transition-colors"
-          >
-            Contáctanos <ArrowRight size={18} />
-          </Link>
+        {/* Imagen y overlay para mobile */}
+        <div className="relative h-full w-full block md:hidden">
+          <Image
+            src="/img/Puerto_Varas.jpg"
+            alt="Paisaje Región de Los Lagos"
+            fill
+            priority
+            quality={80}
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50 z-10"></div>
+
+          <div className="absolute inset-0 z-20 flex items-center justify-center text-white text-center p-4">
+            <div>
+              <p className="text-xl max-w-2xl">
+                Conectamos personas y empresas en la Región de Los Lagos con un servicio de traslado privado, seguro y confiable.
+              </p>
+              <Link
+                href="/contacto"
+                className="mt-6 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
+              >
+                Contáctanos <ArrowRight size={18} />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
+
 
       {/* Introduction */}
       <section className="container mx-auto px-4">
