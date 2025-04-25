@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Viajes Interregionales
+                  Viajes Interurbanos
                 </Link>
               </li>
               <li>

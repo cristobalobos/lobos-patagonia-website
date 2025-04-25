@@ -26,8 +26,8 @@ export default function Home() {
             <div className="absolute bottom-0 w-full z-20 text-white text-center p-6 bg-gradient-to-t from-black/70 via-black/30 to-transparent drop-shadow-md">
               <p className="text-lg font-semibold mb-2 drop-shadow">Servicios Disponibles</p>
               <ul className="text-sm space-y-1 mb-4 drop-shadow-sm">
-                <li>🚐 Traslados al Aeropuerto El Tepual</li>
-                <li>🌄 Viajes Interregionales</li>
+                <li>🚐 Traslados al Aeropuerto El Tepual Puerto Montt</li>
+                <li>🌄 Viajes Interurbanos</li>
                 <li>🧭 Tours Personalizados</li>
                 <li>🏢 Servicio a empresas</li>
               </ul>
@@ -81,8 +81,8 @@ export default function Home() {
 
               {/* Lista de servicios */}
               <ul className="text-green-800 text-base space-y-1 font-medium">
-                <li>🚐 Traslados al Aeropuerto El Tepual</li>
-                <li>🌄 Viajes Interregionales</li>
+                <li>🚐 Traslados al Aeropuerto El Tepual Puerto Montt</li>
+                <li>🌄 Viajes Interurbanos</li>
                 <li>🧭 Tours Personalizados</li>
                 <li>🏢 Servicio a empresas</li>
               </ul>
@@ -163,14 +163,13 @@ export default function Home() {
 
 
       {/* Introduction */}
-      <section className="container mx-auto px-4">
+      <section className="container mx-auto px-4 pt-20 md:pt-32">
         <div className="max-w-4xl mx-auto text-center">
-          <br />
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-green-900 leading-relaxed">
             Lobos Transfer es una empresa familiar de transporte de pasajeros con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
           </p>
-          <p className="text-lg mb-8">
-            Contamos con vehículos autorizados según el Decreto 80, ideales para empresas, instituciones y clientes que requieren un servicio seguro, puntual y profesional. Nuestros conductores están altamente capacitados y comprometidos con una atención de excelencia, garantizando comodidad, presentación y confiabilidad en cada viaje.
+          <p className="text-lg mb-8 text-green-900 leading-relaxed">
+            Contamos con vehículos autorizados según el Decreto 80 del Ministerio de Transporte, ideales para empresas, instituciones y clientes que requieren un servicio seguro, puntual y profesional. Nuestros conductores están altamente capacitados y comprometidos con una atención de excelencia, garantizando comodidad, presentación y confiabilidad en cada viaje.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link href="/nosotros" className="bg-stone-200 hover:bg-stone-300 px-5 py-2 rounded-md transition-colors">
@@ -181,7 +180,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Services Preview */}
       < section className="bg-green-50 py-16" >
@@ -192,11 +191,11 @@ export default function Home() {
               <h3 className="text-xl font-semibold mb-3 text-green-700">Traslados al Aeropuerto</h3>
               <p>
                 Traslados al Aeropuerto
-                Transporte confiable y puntual hacia y desde el Aeropuerto El Tepual de Puerto Montt, asegurando un inicio o final tranquilo para su viaje por la Región de Los Lagos.
+                Transporte confiable y puntual hacia y desde el Aeropuerto El Tepual Puerto Montt de Puerto Montt, asegurando un inicio o final tranquilo para su viaje por la Región de Los Lagos.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-green-700">Viajes Interregionales</h3>
+              <h3 className="text-xl font-semibold mb-3 text-green-700">Viajes Interurbanos</h3>
               <p>
                 Transporte cómodo de pasajeros entre ciudades y pueblos del Sur de Chile, con opciones de programación
                 flexibles.
@@ -261,7 +260,7 @@ export default function Home() {
               />
             </div>
             <h3 className="text-xl font-semibold mb-2 text-green-700">Hyundai Staria US4 CRDI</h3>
-            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2020</p>
+            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2022</p>
             <ul className="space-y-2">
               <li className="flex items-center gap-2">
                 <span className="w-2 h-2 bg-green-700 rounded-full"></span>

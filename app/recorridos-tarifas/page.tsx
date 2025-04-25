@@ -39,9 +39,9 @@ export default function RoutesPricesPage() {
         <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">Traslados al Aeropuerto</h2>
 
         <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-          <h3 className="text-xl font-medium mb-4 text-green-700">Traslados al Aeropuerto El Tepual (PMC)</h3>
+          <h3 className="text-xl font-medium mb-4 text-green-700">Traslados al Aeropuerto El Tepual Puerto Montt (PMC)</h3>
           <p className="mb-6">
-            Ofrecemos traslados confiables desde y hacia el Aeropuerto El Tepual en Puerto Montt a varios destinos dentro del <strong>radio urbano</strong> en la Región de Los Lagos.
+            Ofrecemos traslados confiables desde y hacia el Aeropuerto El Tepual Puerto Montt en Puerto Montt a varios destinos dentro del <strong>radio urbano</strong> en la Región de Los Lagos.
           </p>
 
 

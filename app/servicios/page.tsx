@@ -64,7 +64,7 @@ export default function ServicesPage() {
             />
           </div>
           <div>
-            <h2 className="text-2xl font-semibold mb-4 text-green-700">Viajes Interregionales</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-green-700">Viajes Interurbanos</h2>
             <p className="mb-4">
               Explore las diversas regiones del Sur de Chile con nuestro cómodo servicio de transporte interregional.
               Conectamos las principales ciudades, pueblos y atracciones naturales de toda la Region de Los Lagos.
