@@ -32,7 +32,7 @@ export default function Home() {
                 <li>🏢 Servicio a empresas</li>
               </ul>
               <Link
-                href="/contacto"
+                href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
                 className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-md text-sm inline-flex items-center gap-2 transition-colors"
               >
                 <svg
@@ -89,7 +89,7 @@ export default function Home() {
 
               {/* Botón */}
               <Link
-                href="/contacto"
+                href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
                 className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors inline-flex items-center gap-2 text-sm"
                 aria-label="Reservar traslado vía WhatsApp"
               >
