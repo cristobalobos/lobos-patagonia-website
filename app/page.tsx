@@ -7,13 +7,105 @@ export default function Home() {
     <div className="flex flex-col gap-16 pb-16">
       {/* Hero Section */}
 
-
-
-
-
       <section className="relative h-[70vh] w-full">
+        <section className="relative w-full h-[70vh] md:h-[80vh]">
+          {/* Mobile version (only visible on mobile) */}
+          <div className="relative w-full h-[70vh] md:hidden">
+            <Image
+              src="/img/quique-oscar.jpeg"
+              alt="Equipo Lobos Transfer"
+              fill
+              quality={95}
+              className="object-cover brightness-[1.3] contrast-[1.1] saturate-[1.1]"
+            />
 
-        {/* Imagen y overlay para desktop */}
+            {/* Capa oscura general para oscurecer la imagen */}
+            <div className="absolute inset-0 bg-black/30 z-10" />
+
+            {/* Contenido con fondo gradiente y sombra de texto */}
+            <div className="absolute bottom-0 w-full z-20 text-white text-center p-6 bg-gradient-to-t from-black/70 via-black/30 to-transparent drop-shadow-md">
+              <p className="text-lg font-semibold mb-2 drop-shadow">Servicios Disponibles</p>
+              <ul className="text-sm space-y-1 mb-4 drop-shadow-sm">
+                <li>🚐 Traslados al Aeropuerto El Tepual</li>
+                <li>🌄 Viajes Interregionales</li>
+                <li>🧭 Tours Personalizados</li>
+                <li>🏢 Servicio a empresas</li>
+              </ul>
+              <Link
+                href="/contacto"
+                className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-md text-sm inline-flex items-center gap-2 transition-colors"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-4 h-4 fill-white"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path d="M12.01 2.002c-5.52 0-10 4.479-10 10 0 1.768.465 3.478 1.347 4.988l-1.41 5.158 5.284-1.39a9.963 9.963 0 0 0 4.78 1.212c5.52 0 10-4.48 10-10 0-5.522-4.48-10-10-10zm.01 18c-1.518 0-3.006-.416-4.296-1.207l-.306-.184-3.13.823.835-3.074-.2-.316c-.836-1.319-1.274-2.84-1.274-4.373 0-4.418 3.582-8 8-8 4.418 0 8 3.582 8 8 0 4.419-3.582 8-8 8zm4.295-5.647c-.243-.121-1.43-.705-1.65-.784-.22-.08-.38-.12-.54.121-.16.243-.62.783-.76.943-.14.16-.28.18-.52.06-.243-.121-1.028-.38-1.956-1.213-.723-.645-1.213-1.44-1.356-1.683-.14-.243-.015-.375.106-.495.11-.109.243-.28.364-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.121-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.14 0-.36.04-.55.26-.19.22-.72.7-.72 1.704 0 1.004.74 1.973.84 2.11.1.14 1.46 2.23 3.543 3.13 2.083.9 2.083.6 2.457.56.375-.04 1.19-.48 1.357-.94.17-.46.17-.86.12-.94-.04-.08-.22-.14-.46-.26z" />
+                </svg>
+                Reserva tu traslado
+              </Link>
+            </div>
+          </div>
+
+
+          {/* Desktop */}
+          <div className="hidden md:flex h-full">
+            {/* Imagen lado izquierdo */}
+            <div className="relative w-1/2 h-full">
+              <Image
+                src="/img/quique-oscar.jpeg"
+                alt="Equipo Lobos Transfer"
+                fill
+                className="object-cover brightness-[1.4] contrast-[1.15] saturate-[1.2]"
+                quality={95}
+              />
+              <div className="absolute inset-0 bg-black/20 z-10" />
+            </div>
+
+            {/* Contenido derecho */}
+            <div className="w-1/2 bg-green-50 flex flex-col justify-center gap-6 p-10 z-20 text-center items-center">
+              {/* Logo */}
+              <div className="w-full flex justify-center">
+                <div
+                  className="w-[420px] h-[180px] bg-contain bg-no-repeat bg-center"
+                  style={{ backgroundImage: 'url("/img/logo-lobos.png")' }}
+                  aria-label="Logo Lobos Transfer"
+                />
+              </div>
+
+              {/* Título */}
+              <p className="text-xl font-semibold text-green-900 drop-shadow-sm max-w-2xl leading-relaxed">
+                Tu traslado privado de confianza desde Puerto Varas a cualquier destino en la Región de Los Lagos.
+              </p>
+
+              {/* Lista de servicios */}
+              <ul className="text-green-800 text-base space-y-1 font-medium">
+                <li>🚐 Traslados al Aeropuerto El Tepual</li>
+                <li>🌄 Viajes Interregionales</li>
+                <li>🧭 Tours Personalizados</li>
+                <li>🏢 Servicio a empresas</li>
+              </ul>
+
+              {/* Botón */}
+              <Link
+                href="/contacto"
+                className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors inline-flex items-center gap-2 text-sm"
+                aria-label="Reservar traslado vía WhatsApp"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 fill-white" viewBox="0 0 24 24">
+                  <path d="M12.01 2.002c-5.52 0-10 4.479-10 10 0 1.768.465 3.478 1.347 4.988l-1.41 5.158 5.284-1.39a9.963 9.963 0 0 0 4.78 1.212c5.52 0 10-4.48 10-10 0-5.522-4.48-10-10-10zm.01 18c-1.518 0-3.006-.416-4.296-1.207l-.306-.184-3.13.823.835-3.074-.2-.316c-.836-1.319-1.274-2.84-1.274-4.373 0-4.418 3.582-8 8-8 4.418 0 8 3.582 8 8 0 4.419-3.582 8-8 8zm4.295-5.647c-.243-.121-1.43-.705-1.65-.784-.22-.08-.38-.12-.54.121-.16.243-.62.783-.76.943-.14.16-.28.18-.52.06-.243-.121-1.028-.38-1.956-1.213-.723-.645-1.213-1.44-1.356-1.683-.14-.243-.015-.375.106-.495.11-.109.243-.28.364-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.121-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.14 0-.36.04-.55.26-.19.22-.72.7-.72 1.704 0 1.004.74 1.973.84 2.11.1.14 1.46 2.23 3.543 3.13 2.083.9 2.083.6 2.457.56.375-.04 1.19-.48 1.357-.94.17-.46.17-.86.12-.94-.04-.08-.22-.14-.46-.26z" />
+                </svg>
+                Reserva tu traslado
+              </Link>
+            </div>
+          </div>
+
+        </section>
+
+
+
+        {/* Imagen y overlay para desktop
         <div className="relative h-full w-full hidden md:block">
           <Image
             src="/img/banner-lobos.png"
@@ -39,8 +131,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        {/* Imagen y overlay para mobile */}
+ */}
+        {/* Imagen y overlay para mobile 
         <div className="relative h-full w-full block md:hidden">
           <Image
             src="/img/Puerto_Varas.jpg"
@@ -66,13 +158,14 @@ export default function Home() {
             </div>
           </div>
         </div>
+ */}
       </section>
 
 
       {/* Introduction */}
       <section className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6 text-green-800">Bienvenidos a Lobos Transfer</h2>
+          <br />
           <p className="text-lg mb-6">
             Lobos Transfer es una empresa familiar de transporte de pasajeros con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
           </p>
@@ -88,10 +181,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Services Preview */}
-      <section className="bg-green-50 py-16">
+      < section className="bg-green-50 py-16" >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Nuestros Servicios</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -126,10 +219,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* Vehicles Preview */}
-      <section className="container mx-auto px-4">
+      < section className="container mx-auto px-4" >
         <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Nuestros Vehículos</h2>
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <div className="bg-white p-6 rounded-lg shadow-sm">
@@ -193,10 +286,10 @@ export default function Home() {
             Más información sobre nuestros vehículos <ArrowRight size={18} />
           </Link>
         </div>
-      </section>
+      </section >
 
       {/* Testimonial */}
-      <section className="bg-stone-100 py-16">
+      < section className="bg-stone-100 py-16" >
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo que dicen nuestros clientes</h2>
           <div className="bg-white p-8 rounded-lg shadow-sm">
@@ -214,10 +307,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* CTA */}
-      <section className="container mx-auto px-4 max-w-4xl text-center">
+      < section className="container mx-auto px-4 max-w-4xl text-center" >
         <h2 className="text-3xl font-bold mb-6 text-green-800">¿Listo para viajar con nosotros?</h2>
         <p className="text-lg mb-8">
           Contáctanos hoy para reservar tu transporte a través de los hermosos paisajes del Sur de Chile.
@@ -228,7 +321,7 @@ export default function Home() {
         >
           Ponte en Contacto <ArrowRight size={18} />
         </Link>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }

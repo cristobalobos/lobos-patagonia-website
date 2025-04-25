@@ -32,12 +32,7 @@ export default function ClientesPage() {
         <div className={logoWrapper}>
           <Image src="/img/clientes/LSTRAVEL-CON-FONDO-.jpg" alt="LS Travel" width={150} height={150} className={logoStyle} />
         </div>
-        <div className={logoWrapper}>
-          <Image src="/img/clientes/visit.png" alt="Visit" width={150} height={150} className={logoStyle} />
-        </div>
-        <div className={logoWrapper}>
-          <Image src="/img/clientes/survip_travel.jpg" alt="Survip Travel" width={150} height={150} className={logoStyle} />
-        </div>
+
       </div>
     </div>
   );
