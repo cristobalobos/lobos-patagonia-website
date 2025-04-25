@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-green-700">Our Family Story</h2>
           <p className="mb-4">
-            Lobos Transfer was born from a deep love for the breathtaking landscapes of Southern Chile and a
+            Transfer Lobos was born from a deep love for the breathtaking landscapes of Southern Chile and a
             desire to share this natural beauty with visitors from around the world.
           </p>
           <p className="mb-4">

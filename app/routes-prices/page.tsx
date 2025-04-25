@@ -7,7 +7,7 @@ export default function RoutesPricesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Routes & Prices</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        Lobos Transfer offers transportation services across the beautiful regions of Southern Chile. Below
+        Transfer Lobos offers transportation services across the beautiful regions of Southern Chile. Below
         you'll find our most popular routes and approximate pricing. For custom routes or special requirements, please
         contact us directly.
       </p>

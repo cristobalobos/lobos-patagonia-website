@@ -7,7 +7,7 @@ export default function RoutesPricesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Recorridos y Tarifas</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        Lobos Transfer ofrece servicios de transporte en las hermosas regiones del Sur de Chile. A continuación
+        Transfer Lobos ofrece servicios de transporte en las hermosas regiones del Sur de Chile. A continuación
         encontrará nuestras rutas más populares y precios aproximados. Para rutas personalizadas o requisitos
         especiales, contáctenos directamente.
       </p>

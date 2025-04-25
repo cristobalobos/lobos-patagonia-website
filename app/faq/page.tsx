@@ -37,7 +37,7 @@ export default function GalleryPage() {
               ¿Puedo respaldar un viaje ante una persona natural o jurídica?
             </h3>
             <p>
-              Sí. Todos nuestros servicios pueden ser respaldados mediante una factura electrónica o un vale emitido por Lobos Transfer. Esto permite justificar el traslado tanto ante personas naturales como jurídicas, ideal para empresas, instituciones o viajes personales que requieren respaldo formal.
+              Sí. Todos nuestros servicios pueden ser respaldados mediante una factura electrónica o un vale emitido por Transfer Lobos. Esto permite justificar el traslado tanto ante personas naturales como jurídicas, ideal para empresas, instituciones o viajes personales que requieren respaldo formal.
             </p>
           </div>
         </div>

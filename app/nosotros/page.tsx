@@ -9,7 +9,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-green-700">Nuestra Historia Familiar</h2>
           <p className="mb-4">
-            Lobos Transfer nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
+            Transfer Lobos nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
             de compartir esta belleza natural con visitantes de todo el mundo.
           </p>
           <p className="mb-4">

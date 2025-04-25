@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           {/* resto del menú 
           <Link href="/" className="font-bold text-xl text-green-800">
-            Lobos Transfer          </Link>*/}
+            Transfer Lobos          </Link>*/}
           <Link href="/" className="font-bold text-xl text-green-800">
             <div
               className="w-40 h-16 bg-contain bg-no-repeat bg-center bg-transparent"
