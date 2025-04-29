@@ -34,7 +34,7 @@ export default function ContactPage() {
                 </a>
               </div>
               <div>
-                <p className="font-medium mt-6">Óscar Lobos</p>
+                <p className="font-medium mt-6">Oscar Lobos</p>
                 <a href="tel:+56993135819" className="text-green-700 hover:text-green-800 block">
                   +56 9 9313 5819
                 </a>

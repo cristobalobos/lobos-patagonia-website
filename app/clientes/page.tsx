@@ -29,10 +29,6 @@ export default function ClientesPage() {
         <div className={logoWrapper}>
           <Image src="/img/clientes/benchmark_genetics.jpg" alt="Benchmark Genetics" width={150} height={150} className={logoStyle} />
         </div>
-        <div className={logoWrapper}>
-          <Image src="/img/clientes/LSTRAVEL-CON-FONDO-.jpg" alt="LS Travel" width={150} height={150} className={logoStyle} />
-        </div>
-
       </div>
     </div>
   );

@@ -91,7 +91,7 @@ export default function Footer() {
                 <Phone size={18} className="mt-1 shrink-0" />
                 <div>
                   <p>Enrique: +56 9 9095 7491</p>
-                  <p>Óscar: +56 9 9313 5819</p>
+                  <p>Oscar: +56 9 9313 5819</p>
                 </div>
               </li>
               <li className="flex items-center gap-3">

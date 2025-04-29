@@ -1,172 +1,186 @@
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { MapPin, Plane, Compass, ArrowRight } from "lucide-react"
+
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-16 pb-16">
-      {/* Hero Section */}
 
-      <section className="relative h-[70vh] w-full">
-        <section className="relative w-full h-[70vh] md:h-[80vh]">
-          {/* Mobile version (only visible on mobile) */}
-          <div className="relative w-full h-[70vh] md:hidden">
+      {/* BODY PAGE */}
+
+      <main className="flex flex-col items-center">
+        {/* Hero Section */}
+        <section className="relative w-full h-[500px] md:h-[600px] flex items-center justify-center">
+          <div className="absolute inset-0 z-0">
             <Image
-              src="/img/quique-oscar.jpeg"
-              alt="Equipo Lobos Transfer"
+              src="/img/volcanes_osorno_calbuco.jpg"
+              alt="Ciudad de Puerto Varas"
               fill
-              quality={95}
-              className="object-cover brightness-[1.3] contrast-[1.1] saturate-[1.1]"
+              className="object-cover bg-contain bg-no-repeat bg-center brightness-[0.8] contrast-[0.9] saturate-[0.9]"
+              priority
             />
-
-            {/* Capa oscura general para oscurecer la imagen */}
-            <div className="absolute inset-0 bg-black/30 z-10" />
-
-            {/* Contenido con fondo gradiente y sombra de texto */}
-            <div className="absolute bottom-0 w-full z-20 text-white text-center p-6 bg-gradient-to-t from-black/70 via-black/30 to-transparent drop-shadow-md">
-              <p className="text-lg font-semibold mb-2 drop-shadow">Servicios Disponibles</p>
-              <ul className="text-sm space-y-1 mb-4 drop-shadow-sm">
-                <li>🚐 Traslados al Aeropuerto El Tepual Puerto Montt</li>
-                <li>🌄 Viajes Interurbanos</li>
-                <li>🧭 Tours Personalizados</li>
-                <li>🏢 Servicio a empresas</li>
-              </ul>
-              <Link
-                href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
-                className="bg-green-700 hover:bg-green-800 text-white px-5 py-2 rounded-md text-sm inline-flex items-center gap-2 transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-4 h-4 fill-white"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path d="M12.01 2.002c-5.52 0-10 4.479-10 10 0 1.768.465 3.478 1.347 4.988l-1.41 5.158 5.284-1.39a9.963 9.963 0 0 0 4.78 1.212c5.52 0 10-4.48 10-10 0-5.522-4.48-10-10-10zm.01 18c-1.518 0-3.006-.416-4.296-1.207l-.306-.184-3.13.823.835-3.074-.2-.316c-.836-1.319-1.274-2.84-1.274-4.373 0-4.418 3.582-8 8-8 4.418 0 8 3.582 8 8 0 4.419-3.582 8-8 8zm4.295-5.647c-.243-.121-1.43-.705-1.65-.784-.22-.08-.38-.12-.54.121-.16.243-.62.783-.76.943-.14.16-.28.18-.52.06-.243-.121-1.028-.38-1.956-1.213-.723-.645-1.213-1.44-1.356-1.683-.14-.243-.015-.375.106-.495.11-.109.243-.28.364-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.121-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.14 0-.36.04-.55.26-.19.22-.72.7-.72 1.704 0 1.004.74 1.973.84 2.11.1.14 1.46 2.23 3.543 3.13 2.083.9 2.083.6 2.457.56.375-.04 1.19-.48 1.357-.94.17-.46.17-.86.12-.94-.04-.08-.22-.14-.46-.26z" />
-                </svg>
-                Reserva tu traslado
-              </Link>
-            </div>
           </div>
 
-
-          {/* Desktop */}
-          <div className="hidden md:flex h-full">
-            {/* Imagen lado izquierdo */}
-            <div className="relative w-1/2 h-full">
+          <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
+            <div className="mb-8 w-[400px] h-[400px] relative">
               <Image
-                src="/img/quique-oscar.jpeg"
-                alt="Equipo Lobos Transfer"
+                src="/img/logo-lobos.png"
+                alt="Transfer Lobos Logo"
                 fill
-                className="object-cover brightness-[1.4] contrast-[1.15] saturate-[1.2]"
-                quality={95}
+                className="object-contain"
+                priority
               />
-              <div className="absolute inset-0 bg-black/20 z-10" />
             </div>
 
-            {/* Contenido derecho */}
-            <div className="w-1/2 bg-green-50 flex flex-col justify-center gap-6 p-10 z-20 text-center items-center">
-              {/* Logo */}
-              <div className="w-full flex justify-center">
-                <div
-                  className="w-[420px] h-[180px] bg-contain bg-no-repeat bg-center"
-                  style={{ backgroundImage: 'url("/img/logo-lobos.png")' }}
-                  aria-label="Logo Lobos Transfer"
-                />
-              </div>
 
-              {/* Título */}
-              <p className="text-xl font-semibold text-green-900 drop-shadow-sm max-w-2xl leading-relaxed">
-                Tu traslado privado de confianza desde Puerto Varas a cualquier destino en la Región de Los Lagos.
-              </p>
-
-              {/* Lista de servicios */}
-              <ul className="text-green-800 text-base space-y-1 font-medium">
-                <li>🚐 Traslados al Aeropuerto El Tepual Puerto Montt</li>
-                <li>🌄 Viajes Interurbanos</li>
-                <li>🧭 Tours Personalizados</li>
-                <li>🏢 Servicio a empresas</li>
-              </ul>
-
-              {/* Botón */}
-              <Link
-                href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
-                className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors inline-flex items-center gap-2 text-sm"
-                aria-label="Reservar traslado vía WhatsApp"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 fill-white" viewBox="0 0 24 24">
-                  <path d="M12.01 2.002c-5.52 0-10 4.479-10 10 0 1.768.465 3.478 1.347 4.988l-1.41 5.158 5.284-1.39a9.963 9.963 0 0 0 4.78 1.212c5.52 0 10-4.48 10-10 0-5.522-4.48-10-10-10zm.01 18c-1.518 0-3.006-.416-4.296-1.207l-.306-.184-3.13.823.835-3.074-.2-.316c-.836-1.319-1.274-2.84-1.274-4.373 0-4.418 3.582-8 8-8 4.418 0 8 3.582 8 8 0 4.419-3.582 8-8 8zm4.295-5.647c-.243-.121-1.43-.705-1.65-.784-.22-.08-.38-.12-.54.121-.16.243-.62.783-.76.943-.14.16-.28.18-.52.06-.243-.121-1.028-.38-1.956-1.213-.723-.645-1.213-1.44-1.356-1.683-.14-.243-.015-.375.106-.495.11-.109.243-.28.364-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.121-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.42h-.46c-.14 0-.36.04-.55.26-.19.22-.72.7-.72 1.704 0 1.004.74 1.973.84 2.11.1.14 1.46 2.23 3.543 3.13 2.083.9 2.083.6 2.457.56.375-.04 1.19-.48 1.357-.94.17-.46.17-.86.12-.94-.04-.08-.22-.14-.46-.26z" />
-                </svg>
-                Reserva tu traslado
-              </Link>
-            </div>
+            <Link
+              href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
+              className="bg-green-800 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-colors flex items-center gap-2"
+            >
+              Reserva tu traslado <ArrowRight size={18} />
+            </Link>
           </div>
-
         </section>
 
+        {/* Featured Services Section */}
+        <section className="w-full py-16 bg-white">
+          <div className="container px-4 md:px-6 mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Nuestros Servicios</h2>
 
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* Airport Transfer */}
+              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4">
+                  <Plane className="text-white h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Traslado Aeropuerto Puerto Montt</h3>
+                <p className="text-gray-600">  Servicio directo y puntual hacia o desde el Aeropuerto El Tepual, asegurando un inicio o regreso de viaje sin contratiempos..</p>
+              </div>
 
-        {/* Imagen y overlay para desktop
-        <div className="relative h-full w-full hidden md:block">
-          <Image
-            src="/img/banner-lobos.png"
-            alt="Paisaje patagónico con montañas y un camino"
-            fill
-            priority
-            quality={80}
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/40 z-10"></div>
+              {/* Intercity Transfers */}
+              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4">
+                  <MapPin className="text-white h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Transferencia entre ciudades</h3>
+                <p className="text-gray-600">Movilización cómoda entre Puerto Varas, Puerto Montt, Frutillar y Osorno.
 
-          <div className="absolute inset-0 z-20 flex items-center justify-center text-white text-center p-4">
-            <div>
-              <p className="text-2xl md:text-3xl max-w-2xl">
-                Conectamos personas y empresas en la Región de Los Lagos con un servicio de traslado privado, seguro y confiable.
-              </p>
+                </p>
+              </div>
+
+              {/* Private Tours */}
+              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+                <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4">
+                  <Compass className="text-white h-8 w-8" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">Tour Privados</h3>
+                <p className="text-gray-600">Recorridos diseñados a medida para explorar la belleza natural del sur de Chile, con flexibilidad y atención personalizada..</p>
+              </div>
+            </div>
+            <div className="text-center mt-10">
               <Link
-                href="/contacto"
-                className="mt-8 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
+                href="/recorridos-tarifas"
+                className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium"
               >
-                Contáctanos <ArrowRight size={18} />
+                Ver todos los servicios <ArrowRight size={18} />
               </Link>
             </div>
           </div>
-        </div>
- */}
-        {/* Imagen y overlay para mobile 
-        <div className="relative h-full w-full block md:hidden">
-          <Image
-            src="/img/Puerto_Varas.jpg"
-            alt="Paisaje Región de Los Lagos"
-            fill
-            priority
-            quality={80}
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50 z-10"></div>
+        </section>
 
-          <div className="absolute inset-0 z-20 flex items-center justify-center text-white text-center p-4">
-            <div>
-              <p className="text-xl max-w-2xl">
-                Conectamos personas y empresas en la Región de Los Lagos con un servicio de traslado privado, seguro y confiable.
-              </p>
-              <Link
-                href="/contacto"
-                className="mt-6 bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
-              >
-                Contáctanos <ArrowRight size={18} />
-              </Link>
+        {/* Drivers Contact Section */}
+        <section className="w-full py-16 bg-gray-50">
+          <div className="container px-4 md:px-6 mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Contacta directamente nuestros conductores</h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Driver 1 */}
+              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-green-800">
+                  <Image
+                    src="/img/quique.jpeg"
+                    alt="Enrique Lobos"
+                    width={96}
+                    height={96}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Enrique Lobos</h3>
+                <p className="text-gray-600 mb-4">Fundador y Conductor profesional con mas de 20 años de experiencia</p>
+                <Link
+                  href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
+                  className="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-6 rounded-lg transition-colors flex items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                  Contactanos via WhatsApp
+                </Link>
+              </div>
+
+              {/* Driver 2 */}
+              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-2 border-green-800">
+                  <Image
+                    src="/img/oscar.jpeg"
+                    alt="Óscar Lobos"
+                    width={96}
+                    height={96}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">Óscar Lobos</h3>
+                <p className="text-gray-600 mb-4">Conductor Profesional con 10 años de experencia, con dominio de inglés y portugués.
+                </p>
+                <Link
+                  href="https://wa.me/56993135819?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
+                  className="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-6 rounded-lg transition-colors flex items-center gap-2"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                  </svg>
+                  Contactanos via WhatsApp
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
- */}
-      </section>
+        </section>
+
+        {/* Reference Prices Section */}
+        <section className="w-full py-12 bg-white">
+          <div className="container px-4 md:px-6 mx-auto max-w-3xl">
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Precios Referencia</h2>
+
+            <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-center p-3 border-b border-gray-200 md:border-b-0 md:border-r">
+                  <Plane className="text-green-800 h-6 w-6 mr-3 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-medium text-gray-800">Traslado Aeropuerto El Tepual</h3>
+                    <p className="text-gray-600">Desde $25.000 (para hasta 3 pasajeros) </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center p-3">
+                  <MapPin className="text-green-800 h-6 w-6 mr-3 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-medium text-gray-800"> Traslados locales en Puerto Varas</h3>
+                    <p className="text-gray-600">Desde $5.000 (para hasta 3 pasajeros).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
 
       {/* Introduction */}
-      <section className="container mx-auto px-4 pt-20 md:pt-32">
+      <section className="container mx-auto px-4 pt-10 md:pt-8">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-lg mb-6 text-green-900 leading-relaxed">
-            Lobos Transfer es una empresa familiar de transporte de pasajeros con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
+            Transfer Lobos es una empresa familiar de transporte de pasajeros con basex en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
           </p>
           <p className="text-lg mb-8 text-green-900 leading-relaxed">
             Contamos con vehículos autorizados según el Decreto 80 del Ministerio de Transporte, ideales para empresas, instituciones y clientes que requieren un servicio seguro, puntual y profesional. Nuestros conductores están altamente capacitados y comprometidos con una atención de excelencia, garantizando comodidad, presentación y confiabilidad en cada viaje.
@@ -185,141 +199,70 @@ export default function Home() {
       {/* Services Preview */}
       < section className="bg-green-50 py-16" >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Nuestros Servicios</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Nuestros Vehículos</h2>
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-green-700">Traslados al Aeropuerto</h3>
-              <p>
-                Traslados al Aeropuerto
-                Transporte confiable y puntual hacia y desde el Aeropuerto El Tepual Puerto Montt de Puerto Montt, asegurando un inicio o final tranquilo para su viaje por la Región de Los Lagos.
-              </p>
+              <div className="aspect-video relative mb-4 overflow-hidden rounded-md">
+                <Image
+                  src="/img/van_2.jpg?height=400&width=600"
+                  alt="Van de 18 pasajeros"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-green-700">Vehículo 1: Hyundai Staria US4</h3>
+              <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2022</p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-700 rounded-full"></span>
+                  Aire acondicionado y calefacción
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-700 rounded-full"></span>
+                  Asientos reclinables cómodos
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-700 rounded-full"></span>
+                  Amplio espacio para equipaje
+                </li>
+              </ul>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-green-700">Viajes Interurbanos</h3>
-              <p>
-                Transporte cómodo de pasajeros entre ciudades y pueblos del Sur de Chile, con opciones de programación
-                flexibles.
-              </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-green-700">Tours Personalizados</h3>
-              <p>
-                Servicios de transporte personalizados para grupos que exploran las maravillas naturales de la
-                Region de Los Lagos, con conocimiento y experiencia local.
-              </p>
+              <div className="aspect-video relative mb-4 overflow-hidden rounded-md">
+                <Image
+                  src="/img/van_1.jpg?height=400&width=600"
+                  alt="Van de 18 pasajeros"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-green-700">Vehículo 2: Hyundai Staria US4</h3>
+              <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2022</p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-700 rounded-full"></span>
+                  Sistema de control climático
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-700 rounded-full"></span>
+                  Puertos de carga USB
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-2 h-2 bg-green-700 rounded-full"></span>
+                  Suspensión mejorada para mayor comodidad
+                </li>
+              </ul>
             </div>
           </div>
           <div className="text-center mt-10">
             <Link
-              href="/recorridos-tarifas"
+              href="/vehiculos"
               className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium"
             >
-              Ver todos los servicios <ArrowRight size={18} />
+              Más información sobre nuestros vehículos <ArrowRight size={18} />
             </Link>
           </div>
         </div>
-      </section >
-
-      {/* Vehicles Preview */}
-      < section className="container mx-auto px-4" >
-        <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Nuestros Vehículos</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <div className="aspect-video relative mb-4 overflow-hidden rounded-md">
-              <Image
-                src="/img/van_2.jpg?height=400&width=600"
-                alt="Van de 18 pasajeros"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-green-700">Hyundai Staria US4</h3>
-            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2022</p>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-700 rounded-full"></span>
-                Aire acondicionado y calefacción
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-700 rounded-full"></span>
-                Asientos reclinables cómodos
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-700 rounded-full"></span>
-                Amplio espacio para equipaje
-              </li>
-            </ul>
-          </div>
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <div className="aspect-video relative mb-4 overflow-hidden rounded-md">
-              <Image
-                src="/img/van_1.jpg?height=400&width=600"
-                alt="Van de 18 pasajeros"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold mb-2 text-green-700">Hyundai Staria US4 CRDI</h3>
-            <p className="text-stone-600 mb-4">Capacidad para 18 pasajeros, modelo 2022</p>
-            <ul className="space-y-2">
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-700 rounded-full"></span>
-                Sistema de control climático
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-700 rounded-full"></span>
-                Puertos de carga USB
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-2 h-2 bg-green-700 rounded-full"></span>
-                Suspensión mejorada para mayor comodidad
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="text-center mt-10">
-          <Link
-            href="/vehiculos"
-            className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium"
-          >
-            Más información sobre nuestros vehículos <ArrowRight size={18} />
-          </Link>
-        </div>
-      </section >
-
-      {/* Testimonial */}
-      < section className="bg-stone-100 py-16" >
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl font-bold mb-12 text-center text-green-800">Lo que dicen nuestros clientes</h2>
-          <div className="bg-white p-8 rounded-lg shadow-sm">
-            <p className="text-lg italic mb-6">
-              "Nuestra familia tuvo una experiencia increíble con Lobos Transfer. Los conductores fueron
-              profesionales, puntuales y muy conocedores de la región. Las vans estaban limpias y cómodas, haciendo que
-              nuestro viaje por la Region de Los Lagos fuera aún más agradable. ¡Muy recomendable!"
-            </p>
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-stone-200 rounded-full"></div>
-              <div>
-                <p className="font-medium">María González</p>
-                <p className="text-stone-500 text-sm">Santiago, Chile</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section >
-
-      {/* CTA */}
-      < section className="container mx-auto px-4 max-w-4xl text-center" >
-        <h2 className="text-3xl font-bold mb-6 text-green-800">¿Listo para viajar con nosotros?</h2>
-        <p className="text-lg mb-8">
-          Contáctanos hoy para reservar tu transporte a través de los hermosos paisajes del Sur de Chile.
-        </p>
-        <Link
-          href="/contacto"
-          className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md inline-flex items-center gap-2 transition-colors"
-        >
-          Ponte en Contacto <ArrowRight size={18} />
-        </Link>
       </section >
     </div >
   )

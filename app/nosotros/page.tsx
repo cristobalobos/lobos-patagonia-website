@@ -88,10 +88,10 @@ export default function AboutPage() {
               style={{ backgroundImage: "url('/img/oscar.jpeg')" }}
             ></div>
             <div>
-              <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Óscar Lobos</h3>
+              <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Oscar Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Copropietario y Conductor</p>
               <p>
-                Óscar se unió al negocio familiar en 2016, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
+                Oscar se unió al negocio familiar en 2016, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
               </p>
             </div>
           </div>
