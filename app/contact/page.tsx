@@ -60,7 +60,7 @@ export default function ContactPage() {
             {/* Puerto Varas */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden">
               <div className="relative h-40">
-                <Image src="img/puerto_varas.jpg" alt="Ciudad de Puerto Varas" fill className="object-cover object-cover bg-contain bg-no-repeat bg-center" />
+                <Image src="img/puerto_varas_city.jpg" alt="Ciudad de Puerto Varas" fill className="object-cover object-cover bg-contain bg-no-repeat bg-center" />
               </div>
               <div className="p-4 text-center">
                 <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
