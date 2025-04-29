@@ -84,7 +84,7 @@ export default function Home() {
               <div className="bg-white rounded-xl shadow-md overflow-hidden">
                 <div className="relative h-40">
                   <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Saltos_del_petrohue_01b.jpg"
+                    src="/img/Saltos_del_petrohue_01b.jpg"
                     alt="Parque Nacional Vicente Pérez Rosales"
                     fill
                     className="object-cover object-cover bg-contain bg-no-repeat bg-center"
