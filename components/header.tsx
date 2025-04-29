@@ -16,8 +16,8 @@ export default function Header() {
             Lobos Transfer          </Link>*/}
           <Link href="/" className="font-bold text-xl text-green-800">
             <div
-              className="w-40 h-16 bg-contain bg-no-repeat bg-center bg-transparent"
-              style={{ backgroundImage: 'url("/img/logo-lobos.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '160px', height: '80px' }}
+              className="bg-contain bg-no-repeat bg-center bg-transparent"
+              style={{ backgroundImage: 'url("/img/logo-lobos.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '140px', height: '60px' }}
 
             />
           </Link>

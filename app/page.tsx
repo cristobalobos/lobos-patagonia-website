@@ -44,50 +44,66 @@ export default function Home() {
         </section>
 
         {/* Featured Services Section */}
-        <section className="w-full py-16 bg-white">
-          <div className="container px-4 md:px-6 mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Nuestros Servicios</h2>
+        {/* Featured Services Section - Con imágenes específicas */}
+        <section className="w-full py-8 bg-white">
+          <div className="container px-4 mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Nuestros Servicios</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Airport Transfer */}
-              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4">
-                  <Plane className="text-white h-8 w-8" />
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* Aeropuerto El Tepual */}
+              <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                <div className="relative h-40">
+                  <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ElTepual.jpg/1920px-ElTepual.jpg" alt="Aeropuerto El Tepual" fill className="object-cover" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">Traslado Aeropuerto Puerto Montt</h3>
-                <p className="text-gray-600">  Servicio directo y puntual hacia o desde el Aeropuerto El Tepual, asegurando un inicio o regreso de viaje sin contratiempos..</p>
+                <div className="p-4 text-center">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
+                    <Plane className="text-white h-5 w-5" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-1 text-gray-800">Traslados al Aeropuerto</h3>
+                  <p className="text-sm text-gray-600">Servicio directo y cómodo hacia/desde Aeropuerto El Tepual.</p>
+                </div>
               </div>
 
-              {/* Intercity Transfers */}
-              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4">
-                  <MapPin className="text-white h-8 w-8" />
+              {/* Puerto Varas */}
+              <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                <div className="relative h-40">
+                  <Image src="img/puerto_varas.jpg" alt="Ciudad de Puerto Varas" fill className="object-cover object-cover bg-contain bg-no-repeat bg-center" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">Transferencia entre ciudades</h3>
-                <p className="text-gray-600">Movilización cómoda entre Puerto Varas, Puerto Montt, Frutillar y Osorno.
-
-                </p>
+                <div className="p-4 text-center">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
+                    <MapPin className="text-white h-5 w-5" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-1 text-gray-800">Traslados Interurbanos</h3>
+                  <p className="text-sm text-gray-600">
+                    Movilización cómoda entre Puerto Varas, Puerto Montt, Frutillar y Osorno.
+                  </p>
+                </div>
               </div>
 
-              {/* Private Tours */}
-              <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
-                <div className="w-16 h-16 bg-green-800 rounded-full flex items-center justify-center mb-4">
-                  <Compass className="text-white h-8 w-8" />
+              {/* Parque Nacional Vicente Pérez Rosales */}
+              <div className="bg-white rounded-xl shadow-md overflow-hidden">
+                <div className="relative h-40">
+                  <Image
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Saltos_del_petrohue_01b.jpg"
+                    alt="Parque Nacional Vicente Pérez Rosales"
+                    fill
+                    className="object-cover object-cover bg-contain bg-no-repeat bg-center"
+                  />
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">Tour Privados</h3>
-                <p className="text-gray-600">Recorridos diseñados a medida para explorar la belleza natural del sur de Chile, con flexibilidad y atención personalizada..</p>
+                <div className="p-4 text-center">
+                  <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
+                    <Compass className="text-white h-5 w-5" />
+                  </div>
+                  <h3 className="text-lg font-semibold mb-1 text-gray-800">Tours Privados</h3>
+                  <p className="text-sm text-gray-600">
+                    Servicios de transporte personalizados para grupos que exploran las maravillas naturales de la Region de Los Lagos, con conocimiento y experiencia local.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="text-center mt-10">
-              <Link
-                href="/recorridos-tarifas"
-                className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium"
-              >
-                Ver todos los servicios <ArrowRight size={18} />
-              </Link>
             </div>
           </div>
         </section>
+
 
         {/* Drivers Contact Section */}
         <section className="w-full py-16 bg-gray-50">
@@ -194,6 +210,30 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-md mx-auto my-8 flex flex-col items-center gap-4">
+          <h3 className="text-center text-green-900 font-semibold text-lg">
+            Autorizado por:
+          </h3>
+          <div className="flex items-center justify-center gap-6">
+            <Image
+              src="/img/ministerio-logo.png" // logo del Ministerio de Transportes
+              alt="Ministerio de Transportes y Telecomunicaciones"
+              width={150}
+              height={60}
+              className="object-contain"
+              priority
+            />
+            <Image
+              src="/img/aeropuerto-logo.png" // logo de SCL Aeropuerto
+              alt="Aeropuerto de Santiago SCL"
+              width={100}
+              height={60}
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+
       </section>
 
       {/* Services Preview */}

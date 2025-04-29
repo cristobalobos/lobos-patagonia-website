@@ -1,218 +1,192 @@
-import { Mail, MapPin, Phone, MessageSquare } from "lucide-react"
+import { MapPin, Plane, Compass, ArrowRight } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-5xl">
-      <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Contact Us</h1>
+      <section className="relative w-full h-[350px] flex items-center justify-center">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/img/volcanes_osorno_calbuco.jpg"
+            alt="Ciudad de Puerto Varas"
+            fill
+            className="object-cover bg-contain bg-no-repeat bg-center brightness-[0.8] contrast-[0.9] saturate-[0.9]"
+            priority
+          />
+        </div>
 
-      <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        Ready to book your transportation in Southern Chile? Have questions about our services or routes? Get in touch
-        with our team using any of the contact methods below.
-      </p>
+        <div className="container relative z-10 px-4 flex flex-col items-center text-center">
+          <div className="mb-8 w-[250px] h-[250px] relative">
+            <Image
+              src="/img/logo-lobos.png"
+              alt="Transfer Lobos Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-16">
-        <div>
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">Get in Touch</h2>
 
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="bg-green-100 p-3 rounded-full text-green-700">
-                <Phone size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Phone</h3>
-                <p className="mb-1">Carlos Lobos (Driver 1)</p>
-                <a
-                  href="tel:+56912345678"
-                  className="text-green-700 hover:text-green-800 font-medium flex items-center gap-2"
-                >
-                  +56 9 1234 5678
-                  <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">WhatsApp</span>
-                </a>
-                <p className="mt-3 mb-1">Miguel Lobos (Driver 2)</p>
-                <a
-                  href="tel:+56987654321"
-                  className="text-green-700 hover:text-green-800 font-medium flex items-center gap-2"
-                >
-                  +56 9 8765 4321
-                  <span className="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">WhatsApp</span>
-                </a>
-              </div>
-            </div>
+          <Link
+            href="https://wa.me/56990957491?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado"
+            className="bg-green-800 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-colors flex items-center gap-2"
+          >
+            Reserva tu traslado <ArrowRight size={18} />
+          </Link>
+        </div>
+      </section>
 
-            <div className="flex items-start gap-4">
-              <div className="bg-green-100 p-3 rounded-full text-green-700">
-                <Mail size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Email</h3>
-                <a href="mailto:enriquelobosw@hotmail.com " className="text-green-700 hover:text-green-800 font-medium">
-                  enriquelobosw@hotmail.com
-                </a>
-                <p className="text-sm text-stone-600 mt-1">We respond to all inquiries within 24 hours</p>
-              </div>
-            </div>
+      {/* Featured Services Section - Con imágenes específicas */}
+      <section className="w-full py-8 bg-white">
+        <div className="container px-4 mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-6 text-gray-800">Nuestros Servicios</h2>
 
-            <div className="flex items-start gap-4">
-              <div className="bg-green-100 p-3 rounded-full text-green-700">
-                <MessageSquare size={24} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {/* Aeropuerto El Tepual */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="relative h-40">
+                <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ElTepual.jpg/1920px-ElTepual.jpg" alt="Aeropuerto El Tepual" fill className="object-cover" />
               </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">WhatsApp</h3>
-                <p className="mb-3">For fastest response, contact us directly via WhatsApp:</p>
-                <div className="space-y-3">
-                  <a
-                    href="https://wa.me/56912345678"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-flex items-center gap-2 transition-colors"
-                  >
-                    Chat with Carlos
-                  </a>
-                  <a
-                    href="https://wa.me/56987654321"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md inline-flex items-center gap-2 transition-colors ml-3"
-                  >
-                    Chat with Miguel
-                  </a>
+              <div className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
+                  <Plane className="text-white h-5 w-5" />
                 </div>
+                <h3 className="text-lg font-semibold mb-1 text-gray-800">Traslados al Aeropuerto</h3>
+                <p className="text-sm text-gray-600">Servicio directo y cómodo hacia/desde Aeropuerto El Tepual.</p>
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <div className="bg-green-100 p-3 rounded-full text-green-700">
-                <MapPin size={24} />
+            {/* Puerto Varas */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="relative h-40">
+                <Image src="img/puerto_varas.jpg" alt="Ciudad de Puerto Varas" fill className="object-cover object-cover bg-contain bg-no-repeat bg-center" />
               </div>
-              <div>
-                <h3 className="text-lg font-medium mb-1">Location</h3>
-                <p className="mb-1">Puerto Montt, Los Lagos Region</p>
-                <p className="text-stone-600">Southern Chile</p>
-                <p className="text-sm text-stone-600 mt-1">
-                  We provide service throughout the Los Lagos and Los Ríos regions
+              <div className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
+                  <MapPin className="text-white h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-semibold mb-1 text-gray-800">Traslados Interurbanos</h3>
+                <p className="text-sm text-gray-600">
+                  Movilización cómoda entre Puerto Varas, Puerto Montt, Frutillar y Osorno.
+                </p>
+              </div>
+            </div>
+
+            {/* Parque Nacional Vicente Pérez Rosales */}
+            <div className="bg-white rounded-xl shadow-md overflow-hidden">
+              <div className="relative h-40">
+                <Image
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Saltos_del_petrohue_01b.jpg"
+                  alt="Parque Nacional Vicente Pérez Rosales"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4 text-center">
+                <div className="inline-flex items-center justify-center w-10 h-10 bg-green-800 rounded-full mb-2">
+                  <Compass className="text-white h-5 w-5" />
+                </div>
+                <h3 className="text-lg font-semibold mb-1 text-gray-800">Tours Privados</h3>
+                <p className="text-sm text-gray-600">
+                  Servicios de transporte personalizados para grupos que exploran las maravillas naturales de la Region de Los Lagos, con conocimiento y experiencia local.
                 </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div>
-          <h2 className="text-2xl font-semibold mb-6 text-green-700">Send Us a Message</h2>
-
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-1">
-                Your Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="Enter your name"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-1">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="w-full px-4 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="Enter your email"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="phone" className="block text-sm font-medium mb-1">
-                Phone Number (optional)
-              </label>
-              <input
-                type="tel"
-                id="phone"
-                className="w-full px-4 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="Enter your phone number"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="service" className="block text-sm font-medium mb-1">
-                Service Interested In
-              </label>
-              <select
-                id="service"
-                className="w-full px-4 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+      {/* Drivers and Prices Combined Section - Más compacto */}
+      <section className="w-full py-8 bg-gray-50">
+        <div className="container px-4 mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Columna izquierda: Conductor 1 */}
+            <div className="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+              <div className="w-16 h-16 rounded-full overflow-hidden mb-2 border-2 border-green-800">
+                <Image
+                  src="/img/quique.jpeg"
+                  alt="Enrique Lobos"
+                  width={96}
+                  height={96}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-800">Enrique Lobos</h3>
+              <p className="text-xs text-gray-600 mb-2">Conductor profesional</p>
+              <Link
+                href="https://wa.me/56912345678"
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-1 px-4 rounded-lg transition-colors flex items-center gap-1 text-sm"
               >
-                <option value="">Select a service</option>
-                <option value="airport">Airport Transfer</option>
-                <option value="inter-regional">Inter-Regional Travel</option>
-                <option value="custom">Custom Tour</option>
-                <option value="group">Group Transportation</option>
-                <option value="other">Other</option>
-              </select>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp
+              </Link>
             </div>
 
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-1">
-                Your Message
-              </label>
-              <textarea
-                id="message"
-                rows={5}
-                className="w-full px-4 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
-                placeholder="Tell us about your transportation needs"
-              ></textarea>
+            {/* Columna central: Precios */}
+            <div className="bg-white p-4 rounded-xl shadow-md">
+              <h2 className="text-lg font-bold text-center mb-3 text-gray-800">Tarifas Referenciales</h2>
+              <div className="space-y-2">
+                <div className="flex items-center p-2 border-b border-gray-100">
+                  <Plane className="text-green-800 h-4 w-4 mr-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-medium text-sm text-gray-800">Traslado Aeropuerto</h3>
+                    <p className="text-xs text-gray-600">Desde $25.000 CLP</p>
+                  </div>
+                </div>
+                <div className="flex items-center p-2">
+                  <MapPin className="text-green-800 h-4 w-4 mr-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-medium text-sm text-gray-800">Traslados Locales</h3>
+                    <p className="text-xs text-gray-600">Desde $5.000 CLP</p>
+                  </div>
+                </div>
+                <div className="flex items-center p-2 border-t border-gray-100">
+                  <Compass className="text-green-800 h-4 w-4 mr-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-medium text-sm text-gray-800">Tours Privados</h3>
+                    <p className="text-xs text-gray-600">Desde $60.000 CLP</p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-3 text-center">
+                <Link
+                  href="https://wa.me/56912345678?text=Hola,%20me%20gustaría%20consultar%20por%20tarifas"
+                  className="text-green-800 hover:text-green-700 text-sm font-medium"
+                >
+                  Consultar por más destinos
+                </Link>
+              </div>
             </div>
 
-            <button
-              type="submit"
-              className="bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-md transition-colors w-full"
-            >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
-
-      <div className="bg-stone-100 p-8 rounded-lg">
-        <h2 className="text-2xl font-semibold mb-6 text-center text-green-700">Frequently Asked Questions</h2>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          <div>
-            <h3 className="text-lg font-medium mb-2 text-green-700">How far in advance should I book?</h3>
-            <p>
-              We recommend booking at least 48 hours in advance for standard routes, and 7 days for custom tours or
-              international travel. However, we can sometimes accommodate last-minute requests.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-medium mb-2 text-green-700">What payment methods do you accept?</h3>
-            <p>
-              We accept cash (Chilean Pesos or USD), credit/debit cards, and bank transfers. For international clients,
-              we can also arrange payment through PayPal.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-medium mb-2 text-green-700">Do you provide child seats?</h3>
-            <p>
-              Yes, we can provide child seats upon request. Please let us know the age and weight of the child when
-              making your booking so we can prepare the appropriate seat.
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-medium mb-2 text-green-700">Can you help with border crossing documents?</h3>
-            <p>
-              While we cannot process documents for you, we can provide guidance on the requirements for crossing
-              between Chile and Argentina, and our drivers are experienced with the procedures.
-            </p>
+            {/* Columna derecha: Conductor 2 */}
+            <div className="bg-white p-4 rounded-xl shadow-md flex flex-col items-center">
+              <div className="w-16 h-16 rounded-full overflow-hidden mb-2 border-2 border-green-800">
+                <Image
+                  src="/img/oscar.jpeg"
+                  alt="Óscar Lobos"
+                  width={96}
+                  height={96}
+                  className="object-cover w-full h-full"
+                />
+              </div>
+              <h3 className="text-lg font-semibold mb-1 text-gray-800">Óscar Lobos</h3>
+              <p className="text-xs text-gray-600 mb-2">Experto en tours regionales</p>
+              <Link
+                href="https://wa.me/56987654321"
+                className="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-1 px-4 rounded-lg transition-colors flex items-center gap-1 text-sm"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   )
 }
