@@ -38,16 +38,16 @@ export default function LandingSection() {
                   icon={<Plane className="h-6 w-6 text-white" />}
                   title="Traslados al Aeropuerto"
                   description="Servicio directo y cómodo hacia/desde Aeropuerto El Tepual (Puerto Montt)."
-                  imageSrc="/images/aeropuerto-tepual.png"
+                  imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ElTepual.jpg/1920px-ElTepual.jpg"
                   imageAlt="Aeropuerto El Tepual"
                 />
 
                 {/* Intercity Transfers */}
                 <ServiceCard
                   icon={<MapPin className="h-6 w-6 text-white" />}
-                  title="Traslados Interurbanos"
-                  description="Viajes entre Puerto Varas, Puerto Montt, Frutillar, Osorno y más."
-                  imageSrc="/images/puerto-varas.png"
+                  title="Traslados dentro de Puerto Varas"
+                  description="Viajes dentro de Puerto Varas y hacia otras ciudades en su radio urbano"
+                  imageSrc="/img/puerto_varas_city.jpg"
                   imageAlt="Ciudad de Puerto Varas"
                 />
 
@@ -55,8 +55,8 @@ export default function LandingSection() {
                 <ServiceCard
                   icon={<Compass className="h-6 w-6 text-white" />}
                   title="Tours Privados"
-                  description="Excursiones personalizadas a destinos como el Parque Nacional Vicente Pérez Rosales."
-                  imageSrc="/images/vicente-perez-rosales.png"
+                  description="Excursiones a cualquier punto atractivo turistico de Región de Los Lagos. "
+                  imageSrc="/img/Saltos_del_petrohue_01b.jpg"
                   imageAlt="Parque Nacional Vicente Pérez Rosales"
                 />
               </div>
@@ -69,43 +69,25 @@ export default function LandingSection() {
                   <div className="space-y-4">
                     <div className="flex items-center p-2 border-b border-gray-100">
                       <div className="bg-green-800 p-2 rounded-full mr-3">
-                        <Plane className="h-5 w-5 text-white" />
+                        <Plane className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-800">Traslado Aeropuerto</h3>
-                        <p className="text-gray-600">Desde $25.000 CLP</p>
+                        <p className="text-gray-600">Desde $25.000 (3 personas)</p>
                       </div>
                     </div>
 
                     <div className="flex items-center p-2 border-b border-gray-100">
                       <div className="bg-green-800 p-2 rounded-full mr-3">
-                        <MapPin className="h-5 w-5 text-white" />
+                        <MapPin className="h-6 w-6 text-white" />
                       </div>
                       <div>
                         <h3 className="font-medium text-gray-800">Traslados en Puerto Varas</h3>
-                        <p className="text-gray-600">Desde $5.000 CLP</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-center p-2">
-                      <div className="bg-green-800 p-2 rounded-full mr-3">
-                        <Compass className="h-5 w-5 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="font-medium text-gray-800">Tours Privados</h3>
-                        <p className="text-gray-600">Desde $60.000 CLP</p>
+                        <p className="text-gray-600">Desde $5.000 (3 personas)</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="mt-4 text-center">
-                    <Link
-                      href="https://wa.me/56912345678?text=Hola,%20me%20gustaría%20consultar%20por%20tarifas"
-                      className="text-green-800 hover:text-green-700 font-medium"
-                    >
-                      Consultar por más destinos
-                    </Link>
-                  </div>
                 </CardContent>
               </Card>
             </TabsContent>
@@ -116,21 +98,21 @@ export default function LandingSection() {
                 {/* Driver 1 */}
                 <DriverCard
                   name="Enrique Lobos"
-                  role="Conductor Principal"
+
                   phone="+56 9 1234 5678"
-                  email="enrique@transferlobos.cl"
+                  email="enriquelobosw@hotmail.com"
                   whatsapp="56912345678"
-                  imageSrc="/images/driver-enrique.jpg"
+                  imageSrc="/img/quique-van.jpg"
                 />
 
                 {/* Driver 2 */}
                 <DriverCard
                   name="Óscar Lobos"
-                  role="Conductor de Tours"
+
                   phone="+56 9 8765 4321"
                   email="oscar@transferlobos.cl"
                   whatsapp="56987654321"
-                  imageSrc="/images/driver-oscar.jpg"
+                  imageSrc="/img/oscar-van.jpg"
                 />
               </div>
             </TabsContent>
@@ -147,17 +129,17 @@ export default function LandingSection() {
               <ServiceCard
                 icon={<Plane className="h-6 w-6 text-white" />}
                 title="Traslados al Aeropuerto"
-                description="Servicio directo y cómodo hacia/desde Aeropuerto El Tepual (Puerto Montt)."
-                imageSrc="/images/aeropuerto-tepual.png"
+                description="Traslados desde y hacia el Aeropuerto El Tepual."
+                imageSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ElTepual.jpg/1920px-ElTepual.jpg"
                 imageAlt="Aeropuerto El Tepual"
               />
 
               {/* Intercity Transfers */}
               <ServiceCard
                 icon={<MapPin className="h-6 w-6 text-white" />}
-                title="Traslados Interurbanos"
-                description="Viajes entre Puerto Varas, Puerto Montt, Frutillar, Osorno y más."
-                imageSrc="/images/puerto-varas.png"
+                title="Traslados dentro de Puerto Varas"
+                description="Viajes dentro de Puerto Varas y hacia otras ciudades en su radio urbano"
+                imageSrc="/img/puerto_varas_city.jpg"
                 imageAlt="Ciudad de Puerto Varas"
               />
 
@@ -165,8 +147,8 @@ export default function LandingSection() {
               <ServiceCard
                 icon={<Compass className="h-6 w-6 text-white" />}
                 title="Tours Privados"
-                description="Excursiones personalizadas a destinos como el Parque Nacional Vicente Pérez Rosales."
-                imageSrc="/images/vicente-perez-rosales.png"
+                description="Excursiones a cualquier punto atractivo turistico de Región de Los Lagos."
+                imageSrc="/img/Saltos_del_petrohue_01b.jpg"
                 imageAlt="Parque Nacional Vicente Pérez Rosales"
               />
             </div>
@@ -178,14 +160,14 @@ export default function LandingSection() {
             <div className="max-w-3xl mx-auto">
               <Card>
                 <CardContent className="p-6">
-                  <div className="grid grid-cols-3 gap-4">
+                  <div className="grid grid-cols-2 gap-4">
                     <div className="flex items-center p-3">
                       <div className="bg-green-800 p-2 rounded-full mr-3">
                         <Plane className="h-5 w-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-medium text-gray-800">Traslado Aeropuerto</h3>
-                        <p className="text-gray-600">Desde $25.000 CLP</p>
+                        <h3 className="font-medium text-gray-800">Tarifa hacia el Aeropuerto El Tepual</h3>
+                        <p className="text-gray-600">Desde $25.000</p>
                       </div>
                     </div>
 
@@ -194,29 +176,10 @@ export default function LandingSection() {
                         <MapPin className="h-5 w-5 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-medium text-gray-800">Traslados en Puerto Varas</h3>
+                        <h3 className="font-medium text-gray-800">Tarifa dentro de Puerto Varas</h3>
                         <p className="text-gray-600">Desde $5.000 CLP</p>
                       </div>
                     </div>
-
-                    <div className="flex items-center p-3">
-                      <div className="bg-green-800 p-2 rounded-full mr-3">
-                        <Compass className="h-5 w-5 text-white" />
-                      </div>
-                      <div>
-                        <h3 className="font-medium text-gray-800">Tours Privados</h3>
-                        <p className="text-gray-600">Desde $60.000 CLP</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-4 text-center">
-                    <Link
-                      href="https://wa.me/56912345678?text=Hola,%20me%20gustaría%20consultar%20por%20tarifas"
-                      className="text-green-800 hover:text-green-700 font-medium"
-                    >
-                      Consultar por más destinos
-                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -230,21 +193,19 @@ export default function LandingSection() {
               {/* Driver 1 */}
               <DriverCard
                 name="Enrique Lobos"
-                role="Conductor Principal"
-                phone="+56 9 1234 5678"
-                email="enrique@transferlobos.cl"
+                phone="+56 9 9095 7491"
+                email="enriquelobosw@hotmail.com"
                 whatsapp="56912345678"
-                imageSrc="/images/driver-enrique.jpg"
+                imageSrc="/img/quique-van.jpg"
               />
 
               {/* Driver 2 */}
               <DriverCard
                 name="Óscar Lobos"
-                role="Conductor de Tours"
-                phone="+56 9 8765 4321"
+                phone="+56 9 9313 5819"
                 email="oscar@transferlobos.cl"
                 whatsapp="56987654321"
-                imageSrc="/images/driver-oscar.jpg"
+                imageSrc="/img/oscar-van.jpg"
               />
             </div>
           </div>
@@ -261,6 +222,7 @@ interface ServiceCardProps {
   imageSrc: string
   imageAlt: string
 }
+
 
 function ServiceCard({ icon, title, description, imageSrc, imageAlt }: ServiceCardProps) {
   return (
@@ -281,53 +243,56 @@ function ServiceCard({ icon, title, description, imageSrc, imageAlt }: ServiceCa
 
 interface DriverCardProps {
   name: string
-  role: string
   phone: string
   email: string
   whatsapp: string
   imageSrc: string
 }
 
-function DriverCard({ name, role, phone, email, whatsapp, imageSrc }: DriverCardProps) {
+function DriverCard({ name, phone, email, whatsapp, imageSrc }: DriverCardProps) {
   return (
-    <Card className="overflow-hidden">
-      <div className="flex flex-col md:flex-row">
-        <div className="relative w-full md:w-1/3 h-48 md:h-auto">
-          <Image src={imageSrc || "/placeholder.svg"} alt={`Foto de ${name}`} fill className="object-cover" />
-        </div>
-        <CardContent className="p-4 md:p-6 md:w-2/3">
-          <h3 className="text-xl font-bold text-gray-800 mb-1">{name}</h3>
-          <p className="text-green-800 font-medium mb-4">{role}</p>
-
-          <div className="space-y-3">
-            <a
-              href={`tel:${phone.replace(/\s/g, "")}`}
-              className="flex items-center text-gray-700 hover:text-green-800 transition-colors"
-            >
-              <Phone className="h-5 w-5 mr-3 text-green-800" />
-              <span>{phone}</span>
-            </a>
-
-            <a
-              href={`mailto:${email}`}
-              className="flex items-center text-gray-700 hover:text-green-800 transition-colors"
-            >
-              <Mail className="h-5 w-5 mr-3 text-green-800" />
-              <span>{email}</span>
-            </a>
-
-            <a
-              href={`https://wa.me/${whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-lg transition-colors w-full"
-            >
-              <MessageCircle className="h-5 w-5 mr-2" />
-              <span>Contactar por WhatsApp</span>
-            </a>
-          </div>
-        </CardContent>
+    <Card className="overflow-hidden h-full flex flex-col">
+      <div className="relative w-full h-48">
+        <Image
+          src={imageSrc || "/placeholder.svg"}
+          alt={`Foto de ${name} con vehículo`}
+          fill
+          className="object-cover object-center"
+          priority
+        />
       </div>
+      <CardContent className="p-4 text-center flex-grow flex flex-col">
+        <h3 className="text-lg font-semibold mb-1 text-gray-800">{name}</h3>
+
+
+        <div className="space-y-3 mt-auto">
+          <a
+            href={`tel:${phone.replace(/\s/g, "")}`}
+            className="flex items-center justify-center text-gray-700 hover:text-green-800 transition-colors"
+          >
+            <Phone className="h-4 w-4 mr-2 text-green-800" />
+            <span className="text-sm">{phone}</span>
+          </a>
+
+          <a
+            href={`mailto:${email}`}
+            className="flex items-center justify-center text-gray-700 hover:text-green-800 transition-colors"
+          >
+            <Mail className="h-4 w-4 mr-2 text-green-800" />
+            <span className="text-sm">{email}</span>
+          </a>
+
+          <a
+            href={`https://wa.me/${whatsapp}?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-lg transition-colors w-full text-sm"
+          >
+            <MessageCircle className="h-4 w-4 mr-2" />
+            <span>Contactar por WhatsApp</span>
+          </a>
+        </div>
+      </CardContent>
     </Card>
   )
 }

@@ -27,9 +27,6 @@ export default function Header() {
             <Link href="/" className="text-stone-700 hover:text-green-700 transition-colors">
               Inicio
             </Link>
-            <Link href="/recorridos-tarifas" className="text-stone-700 hover:text-green-700 transition-colors">
-              Recorridos y Tarifas
-            </Link>
             <Link href="/nosotros" className="text-stone-700 hover:text-green-700 transition-colors">
               Nosotros
             </Link>

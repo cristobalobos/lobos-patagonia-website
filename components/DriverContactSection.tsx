@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Phone, Mail, MessageCircle } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
 
 interface DriverProps {
     name: string
@@ -12,49 +13,53 @@ interface DriverProps {
 
 const Driver = ({ name, role, phone, email, whatsapp, imageSrc }: DriverProps) => {
     return (
-        <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
-            <div className="relative w-full h-64 md:h-80">
+        <Card className="overflow-hidden h-full flex flex-col">
+            <div className="relative w-full h-48">
                 <Image
                     src={imageSrc || "/placeholder.svg"}
-                    alt={`Foto de ${name}`}
+                    alt={`Foto de ${name} con vehículo`}
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    priority
                 />
             </div>
-            <div className="p-6 flex-grow flex flex-col">
-                <h3 className="text-2xl font-bold text-gray-800 mb-1">{name}</h3>
-                <p className="text-green-800 font-medium mb-4">{role}</p>
+            <CardContent className="p-4 text-center flex-grow flex flex-col">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-green-800 rounded-full -mt-10 mb-2 border-4 border-white">
+                    <Phone className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="text-lg font-semibold mb-1 text-gray-800">{name}</h3>
+                <p className="text-green-800 text-sm font-medium mb-3">{role}</p>
 
-                <div className="space-y-4 mt-2">
+                <div className="space-y-3 mt-auto">
                     <a
                         href={`tel:${phone.replace(/\s/g, "")}`}
-                        className="flex items-center text-gray-700 hover:text-green-800 transition-colors"
+                        className="flex items-center justify-center text-gray-700 hover:text-green-800 transition-colors"
                     >
-                        <Phone className="h-5 w-5 mr-3 text-green-800" />
-                        <span className="text-lg">{phone}</span>
+                        <Phone className="h-4 w-4 mr-2 text-green-800" />
+                        <span className="text-sm">{phone}</span>
                     </a>
 
                     <a
                         href={`mailto:${email}`}
-                        className="flex items-center text-gray-700 hover:text-green-800 transition-colors"
+                        className="flex items-center justify-center text-gray-700 hover:text-green-800 transition-colors"
                     >
-                        <Mail className="h-5 w-5 mr-3 text-green-800" />
-                        <span className="text-lg">{email}</span>
+                        <Mail className="h-4 w-4 mr-2 text-green-800" />
+                        <span className="text-sm">{email}</span>
                     </a>
 
                     <a
                         href={`https://wa.me/${whatsapp}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-3 px-6 rounded-lg transition-colors mt-2 w-full"
+                        className="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-lg transition-colors w-full text-sm"
                     >
-                        <MessageCircle className="h-5 w-5 mr-2" />
+                        <MessageCircle className="h-4 w-4 mr-2" />
                         <span>Contactar por WhatsApp</span>
                     </a>
                 </div>
-            </div>
-        </div>
+            </CardContent>
+        </Card>
     )
 }
 
@@ -69,15 +74,33 @@ export default function DriverContactSection() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
                     <Driver
                         name="Enrique Lobos"
                         role="Conductor Principal"
                         phone="+56 9 1234 5678"
-                        email="enrique@transferlobos.cl"
+                        email="enriquelobosw@hotmail.com"
                         whatsapp="56912345678"
-                        imageSrc="/images/driver-enrique.jpg"
+                        imageSrc="/img/quique-van.jpg"
                     />
+
+                    <div className="hidden md:block">
+                        <Card className="h-full flex flex-col justify-center items-center p-6 bg-green-50">
+                            <h3 className="text-xl font-bold text-green-800 mb-4">Servicio Personalizado</h3>
+                            <p className="text-gray-700 text-center mb-6">
+                                Nuestros conductores profesionales están disponibles para brindarle un servicio de transporte seguro y
+                                confortable.
+                            </p>
+                            <a
+                                href="https://wa.me/56912345678?text=Hola,%20me%20gustaría%20consultar%20por%20disponibilidad"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center bg-green-800 hover:bg-green-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
+                            >
+                                Consultar Disponibilidad
+                            </a>
+                        </Card>
+                    </div>
 
                     <Driver
                         name="Óscar Lobos"
@@ -85,7 +108,7 @@ export default function DriverContactSection() {
                         phone="+56 9 8765 4321"
                         email="oscar@transferlobos.cl"
                         whatsapp="56987654321"
-                        imageSrc="/images/driver-oscar.jpg"
+                        imageSrc="/img/oscar-van.jpg"
                     />
                 </div>
             </div>

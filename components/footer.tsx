@@ -41,11 +41,6 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Recorridos y Tarifas
-                </Link>
-              </li>
-              <li>
                 <Link href="/contacto" className="hover:text-white transition-colors">
                   Contacto
                 </Link>

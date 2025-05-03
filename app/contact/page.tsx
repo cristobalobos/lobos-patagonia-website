@@ -143,14 +143,6 @@ export default function ContactPage() {
               </div>
 
             </div>
-            <div className="text-center mt-8">
-              <Link
-                href="/recorridos-tarifas"
-                className="inline-flex items-center gap-2 text-green-700 hover:text-green-800 font-medium text-sm md:text-base"
-              >
-                Más información sobre nuestros tarifas y servicios <ArrowRight size={18} />
-              </Link>
-            </div>
           </div>
 
         </section>

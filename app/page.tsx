@@ -39,7 +39,6 @@ export default function Home() {
       {/* Main Landing Section with Tabs for Mobile */}
       <LandingSection />
 
-
     </div >
   )
 }
