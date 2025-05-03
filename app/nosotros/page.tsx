@@ -4,7 +4,41 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-16 max-w-5xl">
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Nosotros</h1>
+      <section className="container mx-auto px-4 pt-8 md:pt-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-base md:text-lg mb-4 md:mb-6 text-green-900 leading-relaxed">
+            Transfer Lobos es una empresa familiar de transporte de pasajeros con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
+          </p>
+          <p className="text-base md:text-lg mb-6 text-green-900 leading-relaxed">
+            Contamos con vehículos autorizados según el Decreto 80 del Ministerio de Transporte, ideales para empresas, instituciones y clientes que requieren un servicio seguro, puntual y profesional. Nuestros conductores están altamente capacitados y comprometidos con una atención de excelencia.
+          </p>
 
+        </div>
+
+        <div className="bg-white rounded-lg shadow-md p-4 md:p-6 w-full max-w-md mx-auto my-8 flex flex-col items-center gap-4">
+          <h3 className="text-center text-green-900 font-semibold text-base md:text-lg">
+            Autorizado por:
+          </h3>
+          <div className="flex items-center justify-center gap-6">
+            <Image
+              src="/img/ministerio-logo.png"
+              alt="Ministerio de Transportes y Telecomunicaciones"
+              width={130}
+              height={100}
+              className="object-contain"
+              priority
+            />
+            <Image
+              src="/img/ilustre_municipalidad.png"
+              alt="Muni puerto varas"
+              width={130}
+              height={100}
+              className="object-contain"
+              priority
+            />
+          </div>
+        </div>
+      </section>
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
         <div>
           <h2 className="text-2xl font-semibold mb-4 text-green-700">Nuestra Historia Familiar</h2>
