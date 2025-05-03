@@ -12,7 +12,7 @@ export default function Home() {
 
       <main className="flex flex-col items-center">
         {/* Hero Section */}
-        <section className="relative w-full h-[360px] md:h-[300px] flex items-center justify-center">
+        <section className="relative w-full h-[250px] md:h-[300px] flex items-center justify-center">
           <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
 
             {/* Logo más grande y con menos margen inferior */}
