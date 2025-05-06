@@ -106,7 +106,7 @@ export default function LandingSection() {
 
                 {/* Driver 2 */}
                 <DriverCard
-                  name="Óscar Lobos"
+                  name="Oscar Lobos"
                   phone="+56 9 9313 5819"
                   email="osmaloto@hotmail.com"
                   whatsapp="56993135819"
@@ -199,9 +199,9 @@ export default function LandingSection() {
 
               {/* Driver 2 */}
               <DriverCard
-                name="Óscar Lobos"
+                name="Oscar Lobos"
                 phone="+56 9 9313 5819"
-                email="oscar@transferlobos.cl"
+                email="osmaloto@hotmail.com"
                 whatsapp="56987654321"
                 imageSrc="/img/oscar-van.jpg"
               />

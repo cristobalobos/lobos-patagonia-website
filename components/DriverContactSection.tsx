@@ -103,10 +103,10 @@ export default function DriverContactSection() {
                     </div>
 
                     <Driver
-                        name="Óscar Lobos"
+                        name="Oscar Lobos"
                         role="Conductor de Tours"
                         phone="+56 9 8765 4321"
-                        email="oscar@transferlobos.cl"
+                        email="osmaloto@hotmail.com"
                         whatsapp="56987654321"
                         imageSrc="/img/oscar-van.jpg"
                     />

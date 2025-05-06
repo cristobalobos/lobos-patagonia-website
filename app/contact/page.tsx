@@ -108,9 +108,9 @@ export default function ContactPage() {
               {/* Driver 2 */}
               <div className="bg-white p-5 rounded-xl shadow-md flex flex-col items-center">
                 <div className="w-20 h-20 rounded-full overflow-hidden mb-3 border-2 border-green-800">
-                  <Image src="/img/oscar.jpeg" alt="Óscar Lobos" width={80} height={80} className="object-cover w-full h-full" />
+                  <Image src="/img/oscar.jpeg" alt="Oscar Lobos" width={80} height={80} className="object-cover w-full h-full" />
                 </div>
-                <h3 className="text-lg font-semibold mb-1 text-gray-800">Óscar Lobos</h3>
+                <h3 className="text-lg font-semibold mb-1 text-gray-800">Oscar Lobos</h3>
                 <p className="text-sm text-gray-600 mb-3 text-center">Conductor profesional con 10 años de experiencia, con dominio de inglés y portugués.</p>
                 <Link href="https://wa.me/56993135819?text=Hola%2C%20me%20gustar%C3%ADa%20solicitar%20un%20traslado" className="bg-[#25D366] hover:bg-[#128C7E] text-white font-medium py-2 px-4 rounded-lg transition-colors text-sm flex items-center gap-2">
                   Contactanos via WhatsApp
