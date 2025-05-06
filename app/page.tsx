@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { MapPin, Plane, Compass, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import LandingSection from "../components/LandingSection"
 
 
@@ -11,12 +11,12 @@ export default function Home() {
       {/* BODY PAGE */}
 
       <main className="flex flex-col items-center">
-        {/* Hero Section */}
-        <section className="relative w-full h-[250px] md:h-[300px] flex items-center justify-center">
+        {/* Banner Section */}
+        <section className="relative w-full h-[240px] md:h-[260px] flex items-center justify-center">
           <div className="container relative z-10 px-4 md:px-6 flex flex-col items-center text-center">
 
-            {/* Logo más grande y con menos margen inferior */}
-            <div className="mb-4 w-[280px] md:w-[320px] h-[220px] md:h-[220px] relative">
+            {/* Logo */}
+            <div className="w-[280px] md:w-[320px] h-[220px] md:h-[240px] relative">
               <Image
                 src="/img/transfer-lobos-banner.png"
                 alt="Transfer Lobos Logo"

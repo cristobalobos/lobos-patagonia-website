@@ -52,29 +52,19 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-4 text-white">Nuestros Servicios</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Traslados al Aeropuerto
-                </Link>
+                Traslados al Aeropuerto
               </li>
               <li>
-                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Viajes Interurbanos
-                </Link>
+                Viajes Interurbanos
               </li>
               <li>
-                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Tours Personalizados
-                </Link>
+                Tours Personalizados
               </li>
               <li>
-                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Transporte para Grupos
-                </Link>
+                Transporte para Grupos
               </li>
               <li>
-                <Link href="/recorridos-tarifas" className="hover:text-white transition-colors">
-                  Servicios Corporativos
-                </Link>
+                Servicios Corporativos
               </li>
             </ul>
           </div>

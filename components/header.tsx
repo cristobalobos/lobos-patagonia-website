@@ -17,7 +17,7 @@ export default function Header() {
           <Link href="/" className="font-bold text-xl text-green-800">
             <div
               className="bg-contain bg-no-repeat bg-center bg-transparent"
-              style={{ backgroundImage: 'url("/img/logo-lobos.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '140px', height: '60px' }}
+              style={{ backgroundImage: 'url("/img/logo-lobos.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '140px', height: '75px' }}
 
             />
           </Link>
@@ -88,13 +88,6 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
             >
               Vehículos
-            </Link>
-            <Link
-              href="/recorridos-tarifas"
-              className="block text-stone-700 hover:text-green-700 transition-colors py-2"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Recorridos y Tarifas
             </Link>
             <Link
               href="/faq"
