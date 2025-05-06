@@ -92,8 +92,10 @@ export default function Footer() {
         <div className="border-t border-stone-700 pt-6 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Transfer Lobos. Todos los derechos reservados.</p>
           <p className="mt-2 text-stone-400">
-            Sitio web construido por  Cristóbal Lobos
-            <a href="https://www.linkedin.com/in/clobos90" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"></a>.
+            Sitio web construido por <a href="https://www.linkedin.com/in/clobos90" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+              Cristóbal Lobos
+            </a>.
+
           </p>
         </div>
       </div>
