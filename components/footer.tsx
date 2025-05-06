@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Mail, Phone } from "lucide-react"
+import { Facebook, Instagram, Mail, Phone, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -92,10 +92,11 @@ export default function Footer() {
         <div className="border-t border-stone-700 pt-6 text-center text-sm">
           <p>&copy; {new Date().getFullYear()} Transfer Lobos. Todos los derechos reservados.</p>
           <p className="mt-2 text-stone-400">
-            Sitio Web construido por Cristobal Lobos.
+            Sitio web construido por  Cristóbal Lobos
+            <a href="https://www.linkedin.com/in/clobos90" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors"></a>.
           </p>
         </div>
       </div>
-    </footer>
+    </footer >
   )
 }
