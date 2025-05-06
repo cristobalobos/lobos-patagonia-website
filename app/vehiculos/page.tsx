@@ -6,15 +6,16 @@ export default function VehiclesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Nuestros Vehículos</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        En Lobos Transfer, nos enorgullece contar con una flota compuesta por dos cómodas vans Hyundai Staria US4, modelos 2022.
-        Ambos vehículos se mantienen en excelentes condiciones gracias a un programa de mantenimiento regular, lo que nos permite ofrecer un servicio seguro, confiable y confortable para recorrer los hermosos paisajes de la Región de Los Lagos.
+        En Transfer Lobos, nos enorgullece ofrecer un servicio de transporte privado respaldado por una flota moderna y segura. <b>Contamos con dos vans Hyundai Staria US4 (modelos 2022)</b>, cuidadosamente mantenidas para garantizar comodidad, eficiencia y seguridad en cada viaje a través de la hermosa Región de Los Lagos.
       </p>
 
       <div className="space-y-16">
         {/* Vehicle 1 */}
         <div className="bg-white p-6 md:p-8 rounded-lg shadow-sm">
           <h2 className="text-2xl font-semibold mb-6 text-green-700">Hyundai Staria US4</h2>
-
+          <p>Disfrute de un viaje confortable a bordo de nuestras vans, pensadas para grupos que buscan comodidad y confianza al trasladarse por el sur de Chile.
+          </p>
+          <br />
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div className="space-y-6">
               <div className="aspect-video relative rounded-lg overflow-hidden">
@@ -70,7 +71,9 @@ export default function VehiclesPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Sistema de control climático de doble zona</span>
+                  <span>Sistema de climatización dual (frío/calor)
+
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
@@ -82,11 +85,13 @@ export default function VehiclesPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Suspensión mejorada para viajes cómodos en terrenos variados</span>
+                  <span>Suspensión mejorada para trayectos suaves en distintos terrenos
+
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Amplio espacio para equipaje para todos los pasajeros</span>
+                  <span>Maletero amplio con capacidad para equipaje de todos los pasajeros</span>
                 </li>
               </ul>
             </div>
@@ -102,21 +107,22 @@ export default function VehiclesPage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Sistema de frenado avanzado (ABS)</span>
+                  <span>Sistema de frenos ABS y control de estabilidad (ESP)</span>
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Programa Electrónico de Estabilidad (ESP)</span>
-                </li>
+
               </ul>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Asistencia de viento cruzado para estabilidad en pasos de montaña</span>
+                  <span>Asistente de viento cruzado para mayor estabilidad en rutas cordilleranas
+
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-2 h-2 bg-green-700 rounded-full mt-2"></span>
-                  <span>Botiquín de primeros auxilios y equipo de emergencia</span>
+                  <span>Botiquín de primeros auxilios y kit de emergencia
+
+                  </span>
                 </li>
               </ul>
             </div>
@@ -127,10 +133,7 @@ export default function VehiclesPage() {
       <div className="mt-16 bg-stone-100 p-8 rounded-lg text-center">
         <h2 className="text-2xl font-semibold mb-4 text-green-700">Mantenimiento de Vehículos</h2>
         <p className="max-w-3xl mx-auto">
-          Todos nuestros vehículos se someten a mantenimiento profesional regular e inspecciones de seguridad para
-          garantizar la confiabilidad y la comodidad de los pasajeros. Priorizamos prácticas ecológicas en nuestras
-          rutinas de mantenimiento para minimizar nuestro impacto ambiental mientras viajamos a través de los prístinos
-          paisajes de la Region de Los Lagos.
+          Nuestros vehículos son revisados periódicamente por personal especializado, cumpliendo altos estándares de seguridad y confort. Además, aplicamos prácticas sustentables en el mantenimiento para reducir el impacto ambiental de nuestras operaciones mientras protegemos la naturaleza que nos rodea.
         </p>
       </div>
     </div>

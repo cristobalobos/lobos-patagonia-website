@@ -6,7 +6,7 @@ export default function VehiclesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Our Vehicles</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        At Lobos Transfer, we take pride in our well-maintained fleet of comfortable passenger vans. Each
+        At Transfer Lobos, we take pride in our well-maintained fleet of comfortable passenger vans. Each
         vehicle is regularly serviced to ensure safety, reliability, and a pleasant journey through the beautiful
         landscapes of Southern Chile.
       </p>

@@ -7,10 +7,10 @@ export default function AboutPage() {
       <section className="container mx-auto px-4 pt-8 md:pt-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-base md:text-lg mb-4 md:mb-6 text-green-900 leading-relaxed">
-            Transfer Lobos es una empresa familiar de transporte de pasajeros con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas dentro de la Región de Los Lagos.
+            <b>Transfer Lobos</b> es una empresa de transporte de pasajeros de origen familiar con base en Puerto Varas, especializada en traslados privados para personas naturales y jurídicas en toda la Región de Los Lagos.
           </p>
           <p className="text-base md:text-lg mb-6 text-green-900 leading-relaxed">
-            Contamos con vehículos autorizados según el Decreto 80 del Ministerio de Transporte, ideales para empresas, instituciones y clientes que requieren un servicio seguro, puntual y profesional. Nuestros conductores están altamente capacitados y comprometidos con una atención de excelencia.
+            Contamos con vehículos autorizados conforme al <i>Decreto 80 del Ministerio de Transportes</i>, lo que nos permite ofrecer servicios seguros, puntuales y profesionales. Nuestros conductores están altamente capacitados y comprometidos con brindar una atención de excelencia, garantizando confianza y comodidad en cada viaje.
           </p>
 
         </div>
@@ -41,18 +41,13 @@ export default function AboutPage() {
       </section>
       <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
         <div>
-          <h2 className="text-2xl font-semibold mb-4 text-green-700">Nuestra Historia Familiar</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-green-700">Nuestra Historia</h2>
+
           <p className="mb-4">
-            Lobos Transfer nació de un profundo amor por los impresionantes paisajes del Sur de Chile y el deseo
-            de compartir esta belleza natural con visitantes de todo el mundo.
-          </p>
-          <p className="mb-4">
-            Fundada en 2005 por la familia Lobos, nuestra empresa comenzó con una solo taxi y el compromiso de
-            proporcionar transporte seguro y confiable a través del desafiante terreno de la Region de Los Lagos.
+            Fundada en 2003 por la familia Lobos, nuestra empresa nació con la misión de ofrecer un transporte seguro y confiable a través del desafiante y diverso territorio de la Región de Los Lagos.
           </p>
           <p>
-            Hoy, continuamos operando como una empresa familiar, manteniendo los mismos valores de servicio excepcional,
-            seguridad y responsabilidad ambiental que nos han guiado desde el principio.
+            Hoy seguimos guiándonos por los mismos valores: servicio excepcional, seguridad, compromiso con nuestros pasajeros y una profunda responsabilidad con el entorno natural que nos rodea.
           </p>
         </div>
         <div className="relative h-80 rounded-lg overflow-hidden">
@@ -93,7 +88,7 @@ export default function AboutPage() {
             </div>
             <h3 className="text-xl font-medium mb-2">Presentación Profesional</h3>
             <p>
-              Mantenemos nuestros vehículos en excelente estado de limpieza y contamos con conductores atentos, bien presentados y preparados para ofrecer una experiencia de viaje cómoda y confiable.
+              Mantenemos nuestros vehículos en excelente estado de limpieza y contamos con conductores atentos, buena presentación y preparados para ofrecer una experiencia de viaje cómoda y confiable.
             </p>
           </div>
         </div>
@@ -112,7 +107,7 @@ export default function AboutPage() {
               <p className="text-green-700 mb-3 text-center sm:text-left">Fundador y Conductor</p>
               <p>
                 Con más de 20 años de experiencia conduciendo en la Region de Los Lagos, Enrique conoce cada camino y sendero de
-                la región. Su pasión por la belleza natural del Sur de Chile es evidente en cada viaje.
+                la región. Conocimiento por la belleza natural del Sur de Chile es evidente en cada viaje.
               </p>
             </div>
           </div>
@@ -125,7 +120,7 @@ export default function AboutPage() {
               <h3 className="text-xl font-medium mb-1 text-center sm:text-left">Oscar Lobos</h3>
               <p className="text-green-700 mb-3 text-center sm:text-left">Copropietario y Conductor</p>
               <p>
-                Oscar se unió al negocio familiar en 2016, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
+                Oscar se unió en 2016, aportando su experiencia profesional en servicio al cliente e historia local. Además, domina el inglés, lo que le permite comunicarse con pasajeros internacionales. Se asegura de que cada pasajero disfrute no solo del transporte, sino de una auténtica experiencia sureña.
               </p>
             </div>
           </div>

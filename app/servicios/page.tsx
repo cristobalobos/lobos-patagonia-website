@@ -7,7 +7,7 @@ export default function ServicesPage() {
       <h1 className="text-4xl font-bold mb-8 text-center text-green-800">Nuestros Servicios</h1>
 
       <p className="text-lg text-center max-w-3xl mx-auto mb-16">
-        Lobos Transfer ofrece una variedad de servicios de transporte diseñados para satisfacer las necesidades
+        Transfer Lobos ofrece una variedad de servicios de transporte diseñados para satisfacer las necesidades
         de los viajeros que exploran los hermosos paisajes del Sur de Chile. Todos nuestros servicios priorizan la
         seguridad, la comodidad y la responsabilidad ambiental.
       </p>

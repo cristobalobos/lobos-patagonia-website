@@ -108,7 +108,7 @@ export default function LandingSection() {
                 <DriverCard
                   name="Óscar Lobos"
                   phone="+56 9 9313 5819"
-                  email="oscar@transferlobos.cl"
+                  email="osmaloto@hotmail.com"
                   whatsapp="56993135819"
                   imageSrc="/img/oscar-van.jpg"
                 />
