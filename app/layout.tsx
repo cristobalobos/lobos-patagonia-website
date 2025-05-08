@@ -9,15 +9,16 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Transfer Lobos | Transporte en el Sur de Chile",
+  title: "Transfer Lobos | Traslados al Aeropuerto El Tepual y transporte en la Región de Los Lagos",
   description:
-    "Servicio de transporte de pasajeros seguro y confiable en el Sur de Chile y la Region de Los Lagos. Traslados al aeropuerto y viajes Interurbanos con cómodas vans de 18 pasajeros.",
-  keywords: "transporte Region de Los Lagos, viajes Sur de Chile, traslados aeropuerto Chile, van pasajeros Region de Los Lagos",
-  generator: 'v0.dev',
+    "Especialistas en traslados al Aeropuerto El Tepual de Puerto Montt. Transporte privado de pasajeros con vans cómodas y seguras desde Puerto Varas, Frutillar y alrededores.",
+  keywords:
+    "transfer aeropuerto El Tepual, traslado aeropuerto Puerto Montt, transporte privado Región de Los Lagos, vans Puerto Varas, servicio de transporte sur de Chile",
   icons: {
-    icon: "/img/logo-lobos.png", // o favicon.png si prefieres
+    icon: "/img/logo-lobos.png",
   },
 }
+
 
 export default function RootLayout({
   children,
