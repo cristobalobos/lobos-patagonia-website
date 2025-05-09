@@ -17,8 +17,7 @@ export default function Header() {
           <Link href="/" className="font-bold text-xl text-green-800">
             <div
               className="bg-contain bg-no-repeat bg-center bg-transparent"
-              style={{ backgroundImage: 'url("/img/logo-lobos.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '140px', height: '75px' }}
-
+              style={{ backgroundImage: 'url("/img/logo-transferlobos-sololetras.png")', backgroundSize: 'contain', backgroundPosition: 'center', width: '150px', height: '80px' }}
             />
           </Link>
 
@@ -41,7 +40,7 @@ export default function Header() {
             </Link>
             <Link
               href="/contacto"
-              className="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded-md transition-colors"
+              className="bg-green-800 hover:bg-green-700 text-white font-semibold px-4 py-2 rounded-md transition-colors"
             >
               Contacto
             </Link>

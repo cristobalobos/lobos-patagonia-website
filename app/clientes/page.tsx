@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-// Estilos agrupados
-const sectionContainer = "container mx-auto px-4 py-16 max-w-6xl";
-const titleStyle = "text-4xl font-bold mb-8 text-center text-green-800";
-const paragraphStyle = "text-lg text-center max-w-3xl mx-auto mb-12";
-const gridContainer = "grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center";
+// Estilos agrupados optimizados
+const sectionContainer = "container mx-auto px-4 py-4 max-w-4xl";
+const titleStyle = "text-4xl font-bold mb-6 text-center text-green-800";
+const paragraphStyle = "text-base text-center max-w-3xl mx-auto mb-8";
+const gridContainer = "grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center";
 const logoWrapper = "flex justify-center";
-const logoStyle = "object-contain";
+const logoStyle = "object-contain h-auto";
 
 export default function ClientesPage() {
   return (
@@ -21,14 +21,37 @@ export default function ClientesPage() {
 
       <div className={gridContainer}>
         <div className={logoWrapper}>
-          <Image src="/img/clientes/dreams.png" alt="Dreams" width={150} height={150} className={logoStyle} />
+          <Image
+            src="/img/clientes/dreams_preview.png"
+            alt="Dreams"
+            width={130}
+            height={80}
+            className={logoStyle}
+          />
         </div>
         <div className={logoWrapper}>
-          <Image src="/img/clientes/colegio-puertovaras.jpg" alt="Colegio Puerto Varas" width={150} height={150} className={logoStyle} />
+          <Image
+            src="/img/clientes/colegio-puertovaras_preview.png"
+            alt="Colegio Puerto Varas"
+            width={130}
+            height={80}
+            className={logoStyle}
+          />
         </div>
         <div className={logoWrapper}>
-          <Image src="/img/clientes/benchmark_genetics.jpg" alt="Benchmark Genetics" width={150} height={150} className={logoStyle} />
+          <Image
+            src="/img/clientes/benchmark_preview.png"
+            alt="Benchmark Genetics"
+            width={130}
+            height={80}
+            className={logoStyle}
+          />
         </div>
+      </div>
+
+      {/* Línea final opcional para cerrar visualmente */}
+      <div className="border-t border-gray-200 mt-8 pt-4 text-center text-sm text-gray-500">
+        Clientes destacados – Transfer Lobos
       </div>
     </div>
   );

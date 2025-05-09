@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-stone-50 text-stone-800`}>
         <Header />
         <Analytics />
-        <main className="min-h-screen">{children}</main>
+        <main className="flex-grow">{children}</main>
         <Footer />
       </body>
     </html>
